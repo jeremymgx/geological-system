@@ -1,0 +1,105 @@
+html,body{
+    height: 100%;
+}
+.index{
+    background: url(../images/bj.png) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.layui-nav{
+    background: url(../images/nav_bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 90px;
+}
+.layui-nav-tree .layui-nav-item a{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+.layui-nav-tree .layui-nav-item a:hover,.layui-nav-tree .layui-nav-item a.active{
+    background-color: #45567E;
+}
+.layui-nav-tree .layui-nav-item a:hover::before,.layui-nav-tree .layui-nav-item a.active::before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+nav{
+    position: relative;
+    width: 200px;
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    position: absolute;
+    z-index: 1000;
+}
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+}
+.logo p{
+    color: #fff;
+}
+.close_nav{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #0E2639;
+    color: #fff;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.show_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #0E2639;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.content{
+    width: 100%;
+    height: 89%;
+    display: flex;
+    padding-top: 5%;
+}
+.content .index_left{
+    width: 30%;
+    height: 100%;
+}
+.content .index_center{
+    width: 40%;
+    height: 100%;
+}
+.content .index_right{
+    width: 30%;
+    height: 100%;
+}
+.content_title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 15px 0 20px;
+}
