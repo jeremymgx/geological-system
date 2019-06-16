@@ -87,6 +87,7 @@ nav{
 .content .index_left{
     width: 30%;
     height: 100%;
+    position: relative;
 }
 .content .index_center{
     width: 40%;
@@ -95,6 +96,7 @@ nav{
 .content .index_right{
     width: 30%;
     height: 100%;
+    position: relative;
 }
 .content_title{
     position: absolute;
@@ -118,4 +120,25 @@ nav{
 .echarts6 ul li{
     font-size: 10px;
     color: #0A9AC1;
+}
+.index_title{
+    position: absolute;
+    color: #fff;
+    padding-left: 20px;
+    background: url(../images/group.png) no-repeat left;
+    left: 0;
+    font-size: 14px;
+    background-size: 18px;
+}
+.index_title.title1{
+    top: -1%;
+}
+.index_title.title2{
+    top: 31%;
+}
+.index_title.title3{
+    top: 63%;
+}
+.index_left .index_title{
+    left: 20px;
 }

@@ -224,7 +224,7 @@ $(function () {
     var option_7 = {
         grid:{
             top:20,
-            bottom:50
+            bottom:60
         },
         xAxis: {
             type: 'category',
