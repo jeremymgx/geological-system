@@ -103,3 +103,20 @@ nav{
     color: #fff;
     margin: 15px 0 20px;
 }
+.echarts6{
+    display: flex;
+}
+.echarts6 ul{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: flex;
+    flex-direction:column;
+    justify-content : space-between;
+}
+.echarts6 ul li{
+    font-size: 10px;
+    color: #0A9AC1;
+    padding-bottom: 2px;
+}

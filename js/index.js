@@ -145,6 +145,80 @@ $(function () {
     };
     echarts_4.setOption(option_4)
 
+    //echarts_6
+    var color6 = ['#FF3939','#F18626','#F8E71C']
+    var style6 = color6.map(function(item){
+        return {
+            color:item,
+            barBorderRadius:2,
+            shadowBlur:13,
+            shadowColor:item
+        }
+    })
+    var echarts_6 = echarts.init(document.getElementById('echarts_6'));
+    var option_6 = {
+        tooltip: {
+            trigger: 'item'
+        },
+        legend: {
+            data:['红色预警','橙色预警','黄色预警'],
+            itemWidth: 8,
+            itemHeight: 8,
+            icon: 'circle',
+            bottom:'30',
+            textStyle: {
+                color:'#fff',
+                fontSize:10
+            },
+        },
+        grid:{
+            top:20,
+            bottom:30,
+            containLabel: true
+        },
+        yAxis: {
+            type: 'category',
+            data: ['周凯德','林文哲','禹羽','陈丽','刘建华'],
+            axisLine:{
+                show:false
+            },
+            axisTick:{
+                show:false,
+            },
+            axisLabel:{
+                color:'#fff',
+                fontSize:11
+            },
+        },
+        xAxis: {
+            type: 'value',
+            show: false,
+        },
+        series: [{
+            name:'红色预警',
+            data: [120, , 150, , ],
+            type: 'bar',
+            stack:'all',
+            barWidth:3,
+            itemStyle:style6[0]
+        },
+        {
+            name:'橙色预警',
+            data: [, 200, , , 70],
+            type: 'bar',
+            stack:'all',
+            itemStyle:style6[1]
+        },
+        {
+            name:'黄色预警',
+            data: [, , , 80, ],
+            type: 'bar',
+            stack:'all',
+            itemStyle:style6[2]
+        }]
+    };
+    echarts_6.setOption(option_6)
+
     //echarts_7
     var echarts_7 = echarts.init(document.getElementById('echarts_7'));
     var option_7 = {
