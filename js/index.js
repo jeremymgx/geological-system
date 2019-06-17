@@ -1,5 +1,5 @@
 $(function () {
-    //echarts_1
+    // echarts_1
     var echarts_1 = echarts.init(document.getElementById('echarts_1'));
     var option_1 = {
         color: ['#F74B8F', '#37A1EE', '#45D9A5', '#9280FC'],
@@ -201,15 +201,19 @@ $(function () {
     };
     echarts_1.setOption(option_1);
 
-    //echarts_2
+    // echarts_2
     var echarts_2 = echarts.init(document.getElementById('echarts_2'));
     var option_2 = {
-		
+        grid:{
+            top:80,
+            // left:40,
+            // bottom:40
+        },
 	    legend: {                        
 	        show: true,         
 	        icon: 'circle',                   // 图例项的 icon。ECharts 提供的标记类型包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'也可以通过 'image://url' 设置为图片，其中 url 为图片的链接，或者 dataURI。可以通过 'path://' 将图标设置为任意的矢量路径。                      // 图例距离顶部边距
-            left : '0',     
-            bottom:'0',              // 图例距离左侧边距
+            left : '60',     
+            bottom:'-5',              // 图例距离左侧边距
 	        itemWidth: 10,                  // 图例标记的图形宽度。[ default: 25 ]
 	        itemHeight: 10,                 // 图例标记的图形高度。[ default: 14 ]
 	        // itemGap: 30,                	// 图例每项之间的间隔。[ default: 10 ]横向布局时为水平间隔，纵向布局时为纵向间隔。
@@ -242,9 +246,32 @@ $(function () {
 	        name: {                             // (圆外的标签)雷达图每个指示器名称的配置项。
 	            formatter: '{value}',
 	            textStyle: {
-	                fontSize: 15,
+	                fontSize: 12,
 	                color: '#0ED5F5'
-	            }
+                },
+                // formatter:function(params) {
+                //     var newParamsName = "";
+                //     var paramsNameNumber = params.length;
+                //     var provideNumber =4;  //一行显示几个字
+                //     var rowNumber = Math.ceil(paramsNameNumber / provideNumber);
+                //     if (paramsNameNumber > provideNumber) {
+                //         for (var p = 0; p < rowNumber; p++) {
+                //             var tempStr = "";
+                //             var start = p * provideNumber;
+                //             var end = start + provideNumber;
+                //             if (p == rowNumber - 1) {
+                //                 tempStr = params.substring(start, paramsNameNumber);
+                //             } else {
+                //                 tempStr = params.substring(start, end) + "\n";
+                //             }
+                //             newParamsName += tempStr;
+                //         }
+
+                //     } else {
+                //         newParamsName = params;
+                //     }
+                //     return newParamsName
+                // },
 	        },
 	        nameGap: 15,                        // 指示器名称和指示器轴的距离。[ default: 15 ]
 	        splitNumber: 7,                     // (这里是圆的环数)指示器轴的分割段数。[ default: 5 ]
@@ -270,7 +297,7 @@ $(function () {
 	        },
 	        indicator: [{               // 雷达图的指示器，用来指定雷达图中的多个变量（维度）,跟data中 value 对应
 	            name: '部署与实施',                           // 指示器名称   
-	            max: 15000,                               // 指示器的最大值，可选，建议设置 
+                max: 15000,                           // 指示器的最大值，可选，建议设置 
 	            //color: '#fff'                           // 标签特定的颜色。
 	        }, {
 	            name: '工作进度',
@@ -377,7 +404,7 @@ $(function () {
     }
     echarts_2.setOption(option_2)
 
-    //echarts_3
+    // echarts_3
     var echarts_3 = echarts.init(document.getElementById('echarts_3'));
     var option_3 = {
         legend: {
@@ -635,7 +662,495 @@ $(function () {
     };
     echarts_4.setOption(option_4)
 
-    //echarts_6
+    // echarts_5_1
+    var echarts_5_1 = echarts.init(document.getElementById('echarts_5_1'));
+    var option_5_1 = {
+        legend:[
+            {
+                icon:'circle',
+                x : '0',
+                y : '70%',
+                data: ['工作手段'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+                pageButtonGap:1,
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '70%',
+                data: [ '工作精度'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '0',
+                y : '78%',
+                data: ['工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '78%',
+                data: ['委托工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+        ],
+        // legand:{
+        //     icon:'circle',
+        //     orient: 'vertical',
+        //     bottom:'bottom',
+        //     itemWidth: 10,
+        //     itemHeight: 10,
+        //     textStyle: {
+        //         color:'#fff',
+        //         fontSize:10
+        //     },
+        //     data: ['工作手段', '工作精度', '工作量','委托工作量']
+        // },
+        color: ['#809DE8', '#019CD5', '#78E0E1', '#ECEDF1'],
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '50%'],
+                data:[
+                    {value:335, name:'工作手段'},
+                    {value:310, name:'工作精度'},
+                    {value:274, name:'工作量'},
+                    {value:235, name:'委托工作量'},
+                ].sort(function (a, b) { return a.value - b.value; }),
+                roseType: 'radius',
+                label: {
+                    normal: {
+                    show:false,
+                        textStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        },
+                        smooth: 0.2,
+                        length: 10,
+                        length2: 20
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+    
+                animationType: 'scale',
+                animationEasing: 'elasticOut',
+                animationDelay: function (idx) {
+                    return Math.random() * 200;
+                }
+            }
+        ]
+    }
+    echarts_5_1.setOption(option_5_1);
+    
+    // echarts_5_2
+    var echarts_5_2 = echarts.init(document.getElementById('echarts_5_2'));
+    var option_5_2 = {
+        legend:[
+            {
+                icon:'circle',
+                x : '0',
+                y : '70%',
+                data: ['工作手段'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+                pageButtonGap:1,
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '70%',
+                data: [ '工作精度'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '0',
+                y : '78%',
+                data: ['工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '78%',
+                data: ['委托工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+        ],
+        // legand:{
+        //     icon:'circle',
+        //     orient: 'vertical',
+        //     bottom:'bottom',
+        //     itemWidth: 10,
+        //     itemHeight: 10,
+        //     textStyle: {
+        //         color:'#fff',
+        //         fontSize:10
+        //     },
+        //     data: ['工作手段', '工作精度', '工作量','委托工作量']
+        // },
+        color: ['#809DE8', '#019CD5', '#78E0E1', '#ECEDF1'],
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '50%'],
+                data:[
+                    {value:335, name:'工作手段'},
+                    {value:310, name:'工作精度'},
+                    {value:274, name:'工作量'},
+                    {value:235, name:'委托工作量'},
+                ].sort(function (a, b) { return a.value - b.value; }),
+                roseType: 'radius',
+                label: {
+                    normal: {
+                    show:false,
+                        textStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        },
+                        smooth: 0.2,
+                        length: 10,
+                        length2: 20
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+    
+                animationType: 'scale',
+                animationEasing: 'elasticOut',
+                animationDelay: function (idx) {
+                    return Math.random() * 200;
+                }
+            }
+        ]
+    }
+    echarts_5_2.setOption(option_5_2);
+
+    // echarts_5_3
+    var echarts_5_3 = echarts.init(document.getElementById('echarts_5_3'));
+    var option_5_3 = {
+        legend:[
+            {
+                icon:'circle',
+                x : '0',
+                y : '70%',
+                data: ['工作手段'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+                pageButtonGap:1,
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '70%',
+                data: [ '工作精度'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '0',
+                y : '78%',
+                data: ['工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '78%',
+                data: ['委托工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+        ],
+        color: ['#809DE8', '#019CD5', '#78E0E1', '#ECEDF1'],
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '50%'],
+                data:[
+                    {value:335, name:'工作手段'},
+                    {value:310, name:'工作精度'},
+                    {value:274, name:'工作量'},
+                    {value:235, name:'委托工作量'},
+                ].sort(function (a, b) { return a.value - b.value; }),
+                roseType: 'radius',
+                label: {
+                    normal: {
+                    show:false,
+                        textStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        },
+                        smooth: 0.2,
+                        length: 10,
+                        length2: 20
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+    
+                animationType: 'scale',
+                animationEasing: 'elasticOut',
+                animationDelay: function (idx) {
+                    return Math.random() * 200;
+                }
+            }
+        ]
+    }
+    echarts_5_3.setOption(option_5_3);
+
+    // echarts_5_4
+    var echarts_5_4 = echarts.init(document.getElementById('echarts_5_4'));
+    var option_5_4 = {
+        legend:[
+            {
+                icon:'circle',
+                x : '0',
+                y : '70%',
+                data: ['自检'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+                pageButtonGap:1,
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '70%',
+                data: [ '互检'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+        ],
+        color: ['#019CD5','#809DE8'],
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '50%'],
+                data:[
+                    {value:335, name:'自检'},
+                    {value:510, name:'互检'},
+                ].sort(function (a, b) { return a.value - b.value; }),
+                roseType: 'radius',
+                label: {
+                    normal: {
+                    show:false,
+                        textStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        },
+                        smooth: 0.2,
+                        length: 10,
+                        length2: 20
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+    
+                animationType: 'scale',
+                animationEasing: 'elasticOut',
+                animationDelay: function (idx) {
+                    return Math.random() * 200;
+                }
+            }
+        ]
+    }
+    echarts_5_4.setOption(option_5_4);
+
+    // echarts_5_5
+    var echarts_5_5 = echarts.init(document.getElementById('echarts_5_5'));
+    var option_5_5 = {
+        legend:[
+            {
+                icon:'circle',
+                x : '0',
+                y : '70%',
+                data: ['工作手段'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+                pageButtonGap:1,
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '70%',
+                data: [ '工作精度'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '0',
+                y : '78%',
+                data: ['工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+            {
+                icon:'circle',
+                x : '50%',
+                y : '78%',
+                data: ['委托工作量'],
+                textStyle: {
+                    color:'#0ED5F5',
+                    fontSize:8
+                },
+            },
+        ],
+        // legand:{
+        //     icon:'circle',
+        //     orient: 'vertical',
+        //     bottom:'bottom',
+        //     itemWidth: 10,
+        //     itemHeight: 10,
+        //     textStyle: {
+        //         color:'#fff',
+        //         fontSize:10
+        //     },
+        //     data: ['工作手段', '工作精度', '工作量','委托工作量']
+        // },
+        color: ['#809DE8', '#019CD5', '#78E0E1', '#ECEDF1'],
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '50%'],
+                data:[
+                    {value:335, name:'工作手段'},
+                    {value:310, name:'工作精度'},
+                    {value:274, name:'工作量'},
+                    {value:235, name:'委托工作量'},
+                ].sort(function (a, b) { return a.value - b.value; }),
+                roseType: 'radius',
+                label: {
+                    normal: {
+                    show:false,
+                        textStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.3)'
+                        },
+                        smooth: 0.2,
+                        length: 10,
+                        length2: 20
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+    
+                animationType: 'scale',
+                animationEasing: 'elasticOut',
+                animationDelay: function (idx) {
+                    return Math.random() * 200;
+                }
+            }
+        ]
+    }
+    echarts_5_5.setOption(option_5_5);
+    // echarts_6
     var color6 = ['#FF3939','#F18626','#F8E71C']
     var style6 = color6.map(function(item){
         return {
@@ -709,7 +1224,7 @@ $(function () {
     };
     echarts_6.setOption(option_6)
 
-    //echarts_7
+    // echarts_7
     var echarts_7 = echarts.init(document.getElementById('echarts_7'));
     var option_7 = {
         grid:{

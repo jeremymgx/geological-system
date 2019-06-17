@@ -92,6 +92,18 @@ nav{
     width: 40%;
     height: 100%;
 }
+.content .index_center .index_center_bottom{
+    zoom: 1;
+    width: 100%; 
+    height: 40%;
+}
+.content .index_center .index_center_bottom::after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+}
 .content .index_right{
     width: 30%;
     height: 100%;
@@ -118,5 +130,4 @@ nav{
 .echarts6 ul li{
     font-size: 10px;
     color: #0A9AC1;
-    padding-bottom: 2px;
 }
