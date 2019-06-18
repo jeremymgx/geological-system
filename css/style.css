@@ -105,6 +105,23 @@ nav{
     visibility:hidden;
     height:0;
 }
+.content .index_center .index_center_bottom>div{
+    position: relative;
+}
+.content .index_center .index_center_bottom .echarts-title{
+    position: absolute;
+    top: 65px;
+    color: #0ED5F5;
+    font-size: 14px;
+}
+.content .index_center .index_center_bottom .echarts-title img{
+    width: 25px;
+    height: 28px;
+}
+.content .index_center .index_center_bottom .echarts-title span{
+    position: relative;
+    top: 3px;
+}
 .content .index_right{
     width: 30%;
     height: 100%;
