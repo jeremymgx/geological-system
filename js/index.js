@@ -204,11 +204,6 @@ $(function () {
     // echarts_2
     var echarts_2 = echarts.init(document.getElementById('echarts_2'));
     var option_2 = {
-        grid:{
-            top:80,
-            // left:40,
-            // bottom:40
-        },
 	    legend: {                        
 	        show: true,         
 	        icon: 'circle',                   // 图例项的 icon。ECharts 提供的标记类型包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'也可以通过 'image://url' 设置为图片，其中 url 为图片的链接，或者 dataURI。可以通过 'path://' 将图标设置为任意的矢量路径。                      // 图例距离顶部边距

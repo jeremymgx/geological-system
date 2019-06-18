@@ -154,3 +154,9 @@ nav{
 .index_left .index_title{
     left: 20px;
 }
+.index_left .index_title.title1{
+    top: -3%;
+}
+.index_left .index_title.title3{
+    top: 71%;
+}
