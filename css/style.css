@@ -32,6 +32,8 @@ html,body{
 nav{
     position: relative;
     width: 200px;
+}
+.index_nav{
     display: none;
 }
 .logo{
