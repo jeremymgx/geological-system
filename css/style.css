@@ -108,7 +108,7 @@ nav{
     height:0;
 }
 .content .index_center .index_center_bottom>div{
-    position: relative;
+    /*position: relative;*/
 }
 .content .index_center .index_center_bottom .echarts-title{
     position: absolute;
@@ -178,4 +178,49 @@ nav{
 }
 .index_left .index_title.title3{
     top: 71%;
+}
+#echarts_4{
+    background: url("../images/mapbg.png") no-repeat bottom;
+    background-size: auto 100%;
+}
+#echarts_5_1,#echarts_5_2,#echarts_5_3,#echarts_5_4{
+    background: url("../images/line.png") no-repeat right;
+    background-size: 0.8px;
+}
+.index_center_bottom{
+    position: relative;
+}
+.echarts_5_title{
+    position: absolute;
+    top: 20%;
+    color: #0ED5F5;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 16px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.echarts_5_1{
+    background-image: url("../images/ico_5.png");
+}
+.echarts_5_2{
+    background-image: url("../images/ico_2.png");
+    left: 20%;
+}
+.echarts_5_3{
+    background-image: url("../images/ico_5.png");
+    left: 40%;
+}
+.echarts_5_4{
+    background-image: url("../images/ico_5.png");
+    left: 60%;
+}
+.echarts_5_5{
+    background-image: url("../images/ico_5.png");
+    left: 80%;
+}
+.map_bg{
+    width: 100%;
+    height: 20%;
 }

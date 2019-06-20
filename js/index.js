@@ -2,18 +2,15 @@ $(function () {
     // echarts_1
     var echarts_1 = echarts.init(document.getElementById('echarts_1'));
     var option_1 = {
+        tooltip: {
+            trigger: 'item'
+        },
         color: ['#F74B8F', '#37A1EE', '#45D9A5', '#9280FC'],
         grid:{
             top:10,
             left:40,
             bottom:40
         },
-        // tooltip: {
-        //     trigger: 'axis',
-        //     axisPointer: {
-        //         type: 'shadow'
-        //     }
-        // },
         legend: {
             icon:'circle',
             orient: 'vertical',
@@ -26,7 +23,6 @@ $(function () {
             },
             data: ['综合风险度1', '综合风险度2', '综合风险度3','综合风险度4']
         },
-        // calculable: true,
         xAxis: [
             {
                 type: 'category',
@@ -204,73 +200,35 @@ $(function () {
     // echarts_2
     var echarts_2 = echarts.init(document.getElementById('echarts_2'));
     var option_2 = {
+        tooltip: {
+            trigger: 'item'
+        },
 	    legend: {                        
 	        show: true,         
-	        icon: 'circle',                   // 图例项的 icon。ECharts 提供的标记类型包括 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'也可以通过 'image://url' 设置为图片，其中 url 为图片的链接，或者 dataURI。可以通过 'path://' 将图标设置为任意的矢量路径。                      // 图例距离顶部边距
+	        icon: 'circle',
             left : '60',     
-            bottom:'-5',              // 图例距离左侧边距
-	        itemWidth: 10,                  // 图例标记的图形宽度。[ default: 25 ]
-	        itemHeight: 10,                 // 图例标记的图形高度。[ default: 14 ]
-	        // itemGap: 30,                	// 图例每项之间的间隔。[ default: 10 ]横向布局时为水平间隔，纵向布局时为纵向间隔。
-	        // orient: 'vertical',             // 图例列表的布局朝向,'horizontal'为横向,''为纵向.
-	        textStyle: {                    // 图例的公用文本样式。
-	            fontSize: 12,
+            bottom:'-5',
+	        itemWidth: 10,
+	        itemHeight: 10,
+	        textStyle: {
+	            fontSize: 10,
 	            color: '#fff'
 	        },
-	        // data: [{                    // 图例的数据数组。数组项通常为一个字符串，每一项代表一个系列的 name（如果是饼图，也可以是饼图单个数据的 name）。图例组件会自动根据对应系列的图形标记（symbol）来绘制自己的颜色和标记，特殊字符串 ''（空字符串）或者 '\n'（换行字符串）用于图例的换行。
-	        //     name: '综合风险度1',                 // 图例项的名称，应等于某系列的name值（如果是饼图，也可以是饼图单个数据的 name）。 
-	        //     icon: 'circle',               // 图例项的 icon。
-	        //     textStyle: {                // 图例项的文本样式。
-	        //         color: '#39A6F1',
-	        //         fontWeight: 'normal'		// 文字字体的粗细，可选'normal'，'bold'，'bolder'，'lighter'
-	        //     }
-	        // },{
-	        //     name: '综合风险度2',
-	        //     icon: 'circle',
-	        //     textStyle: {
-	        //         color: '#F34D8F',
-	        //         fontWeight: 'normal'		// 文字字体的粗细，可选'normal'，'bold'，'bolder'，'lighter'
-	        //     }
-	        // }],
 	    },
-	    
 	    radar: [{                       // 雷达图坐标系组件，只适用于雷达图。
 	        center: ['50%', '50%'],             // 圆中心坐标，数组的第一项是横坐标，第二项是纵坐标。[ default: ['50%', '50%'] ]
-	        radius: 80,                        // 圆的半径，数组的第一项是内半径，第二项是外半径。
+	        radius: 68,                        // 圆的半径，数组的第一项是内半径，第二项是外半径。
 	        startAngle: 90,                     // 坐标系起始角度，也就是第一个指示器轴的角度。[ default: 90 ]
 	        name: {                             // (圆外的标签)雷达图每个指示器名称的配置项。
 	            formatter: '{value}',
 	            textStyle: {
-	                fontSize: 12,
+	                fontSize: 10,
 	                color: '#0ED5F5'
                 },
-                // formatter:function(params) {
-                //     var newParamsName = "";
-                //     var paramsNameNumber = params.length;
-                //     var provideNumber =4;  //一行显示几个字
-                //     var rowNumber = Math.ceil(paramsNameNumber / provideNumber);
-                //     if (paramsNameNumber > provideNumber) {
-                //         for (var p = 0; p < rowNumber; p++) {
-                //             var tempStr = "";
-                //             var start = p * provideNumber;
-                //             var end = start + provideNumber;
-                //             if (p == rowNumber - 1) {
-                //                 tempStr = params.substring(start, paramsNameNumber);
-                //             } else {
-                //                 tempStr = params.substring(start, end) + "\n";
-                //             }
-                //             newParamsName += tempStr;
-                //         }
-
-                //     } else {
-                //         newParamsName = params;
-                //     }
-                //     return newParamsName
-                // },
 	        },
-	        nameGap: 15,                        // 指示器名称和指示器轴的距离。[ default: 15 ]
 	        splitNumber: 7,                     // (这里是圆的环数)指示器轴的分割段数。[ default: 5 ]
-	        shape: 'circle',                    // 雷达图绘制类型，支持 'polygon'(多边形) 和 'circle'(圆)。[ default: 'polygon' ]
+            nameGap:5,
+            shape: 'circle',                    // 雷达图绘制类型，支持 'polygon'(多边形) 和 'circle'(圆)。[ default: 'polygon' ]
 	        axisLine: {                         // (圆内的几条直线)坐标轴轴线相关设置
 	            lineStyle: {
 	                color: '#0ED5F5',                   // 坐标轴线线的颜色。
@@ -292,8 +250,7 @@ $(function () {
 	        },
 	        indicator: [{               // 雷达图的指示器，用来指定雷达图中的多个变量（维度）,跟data中 value 对应
 	            name: '部署与实施',                           // 指示器名称   
-                max: 15000,                           // 指示器的最大值，可选，建议设置 
-	            //color: '#fff'                           // 标签特定的颜色。
+                max: 15000,                           // 指示器的最大值，可选，建议设置
 	        }, {
 	            name: '工作进度',
 	            max: 10000
@@ -309,8 +266,8 @@ $(function () {
 	        }]
 	    }],
 	    series: [{
-	        name: '雷达图',             // 系列名称,用于tooltip的显示，legend 的图例筛选，在 setOption 更新数据和配置项时用于指定对应的系列。
-	        type: 'radar',              // 系列类型: 雷达图
+	        name: '雷达图',
+	        type: 'radar',
 	        itemStyle: {                // 折线拐点标志的样式。
 	            normal: {                   // 普通状态时的样式
 	                lineStyle: {
@@ -320,7 +277,7 @@ $(function () {
 	            },
 	            emphasis: {                 // 高亮时的样式
 	                lineStyle: {
-	                    width: 5
+	                    width: 3
 	                },
 	                opacity: 1
 	            }
@@ -336,7 +293,7 @@ $(function () {
 	                        position: 'top',        // 标签的位置。[ default: top ]
 	                        distance: 5,            // 距离图形元素的距离。当 position 为字符描述值（如 'top'、'insideRight'）时候有效。[ default: 5 ]
 	                        color: 'rgba(57,166,241,1)',          // 文字的颜色。如果设置为 'auto'，则为视觉映射得到的颜色，如系列色。[ default: "#fff" ]
-	                        fontSize: 14,           // 文字的字体大小
+	                        fontSize: 12,           // 文字的字体大小
 	                        formatter:function(params) {  
 	                            return params.value;  
 	                        }  
@@ -402,14 +359,16 @@ $(function () {
     // echarts_3
     var echarts_3 = echarts.init(document.getElementById('echarts_3'));
     var option_3 = {
+        tooltip: {
+            trigger: 'item'
+        },
         legend: {
             icon:'circle',
             orient: 'vertical',
-            bottom:'bottom',
             itemWidth: 10,
             itemHeight: 10,
             left:40,
-            bottom:-5,
+            bottom:5,
             textStyle: {
                 color:'#fff',
                 fontSize:10
@@ -423,12 +382,14 @@ $(function () {
             rotate:-90,
             axisLabel: {
                 textStyle: {
-                    color: '#fff'
+                    color: '#fff',
+                    fontSize:10,
                 },
+                interval:0,//强制显示,
                 formatter:function(params) {
                     var newParamsName = "";
                     var paramsNameNumber = params.length;
-                    var provideNumber = 2;  //一行显示几个字
+                    var provideNumber = 3;  //一行显示几个字
                     var rowNumber = Math.ceil(paramsNameNumber / provideNumber);
                     if (paramsNameNumber > provideNumber) {
                         for (var p = 0; p < rowNumber; p++) {
@@ -481,7 +442,7 @@ $(function () {
             }
         ],
         series: [
-            { // For shadow
+            {
                 type: 'bar',
                 itemStyle: {
                     
@@ -490,7 +451,7 @@ $(function () {
                         barBorderRadius:8,
                     }
                 },
-                barWidth:10,
+                barWidth:6,
                 barGap:'-100%',
                 barCategoryGap:'40%',
                 data: [100,100,100,100,100,100,100,100,100],
@@ -504,7 +465,7 @@ $(function () {
 
                 },
                 name:'综合风险度',
-                barWidth:10,
+                barWidth:6,
                 data: [100,70,50,40,80,20,30,50,90],
             }
         ]
@@ -660,15 +621,20 @@ $(function () {
     // echarts_5_1
     var echarts_5_1 = echarts.init(document.getElementById('echarts_5_1'));
     var option_5_1 = {
+        tooltip: {
+            trigger: 'item'
+        },
         legend:[
             {
                 icon:'circle',
                 x : '0',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作手段'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
                 pageButtonGap:1,
             },
@@ -676,34 +642,40 @@ $(function () {
                 icon:'circle',
                 x : '50%',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: [ '工作精度'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '0',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '50%',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['委托工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
-                },
-            },
+                    fontSize:7
+                        },
+                    },
         ],
-        // legand:{
+        // legend:{
         //     icon:'circle',
         //     orient: 'vertical',
         //     bottom:'bottom',
@@ -767,15 +739,20 @@ $(function () {
     // echarts_5_2
     var echarts_5_2 = echarts.init(document.getElementById('echarts_5_2'));
     var option_5_2 = {
+        tooltip: {
+            trigger: 'item'
+        },
         legend:[
             {
                 icon:'circle',
                 x : '0',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作手段'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
                 pageButtonGap:1,
             },
@@ -783,45 +760,39 @@ $(function () {
                 icon:'circle',
                 x : '50%',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: [ '工作精度'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '0',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '50%',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['委托工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
         ],
-        // legand:{
-        //     icon:'circle',
-        //     orient: 'vertical',
-        //     bottom:'bottom',
-        //     itemWidth: 10,
-        //     itemHeight: 10,
-        //     textStyle: {
-        //         color:'#fff',
-        //         fontSize:10
-        //     },
-        //     data: ['工作手段', '工作精度', '工作量','委托工作量']
-        // },
         color: ['#809DE8', '#019CD5', '#78E0E1', '#ECEDF1'],
         series : [
             {
@@ -874,15 +845,20 @@ $(function () {
     // echarts_5_3
     var echarts_5_3 = echarts.init(document.getElementById('echarts_5_3'));
     var option_5_3 = {
+        tooltip: {
+            trigger: 'item'
+        },
         legend:[
             {
                 icon:'circle',
                 x : '0',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作手段'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
                 pageButtonGap:1,
             },
@@ -890,30 +866,36 @@ $(function () {
                 icon:'circle',
                 x : '50%',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: [ '工作精度'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '0',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '50%',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['委托工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
         ],
@@ -969,15 +951,20 @@ $(function () {
     // echarts_5_4
     var echarts_5_4 = echarts.init(document.getElementById('echarts_5_4'));
     var option_5_4 = {
+        tooltip: {
+            trigger: 'item'
+        },
         legend:[
             {
                 icon:'circle',
                 x : '0',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['自检'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
                 pageButtonGap:1,
             },
@@ -985,10 +972,12 @@ $(function () {
                 icon:'circle',
                 x : '50%',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: [ '互检'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
         ],
@@ -1042,15 +1031,20 @@ $(function () {
     // echarts_5_5
     var echarts_5_5 = echarts.init(document.getElementById('echarts_5_5'));
     var option_5_5 = {
+        tooltip: {
+            trigger: 'item'
+        },
         legend:[
             {
                 icon:'circle',
                 x : '0',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作手段'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
                 pageButtonGap:1,
             },
@@ -1058,45 +1052,39 @@ $(function () {
                 icon:'circle',
                 x : '50%',
                 y : '70%',
+                itemWidth:10,
+                itemHeight:10,
                 data: [ '工作精度'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '0',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
             {
                 icon:'circle',
                 x : '50%',
                 y : '78%',
+                itemWidth:10,
+                itemHeight:10,
                 data: ['委托工作量'],
                 textStyle: {
                     color:'#0ED5F5',
-                    fontSize:8
+                    fontSize:7
                 },
             },
         ],
-        // legand:{
-        //     icon:'circle',
-        //     orient: 'vertical',
-        //     bottom:'bottom',
-        //     itemWidth: 10,
-        //     itemHeight: 10,
-        //     textStyle: {
-        //         color:'#fff',
-        //         fontSize:10
-        //     },
-        //     data: ['工作手段', '工作精度', '工作量','委托工作量']
-        // },
         color: ['#809DE8', '#019CD5', '#78E0E1', '#ECEDF1'],
         series : [
             {
