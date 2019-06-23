@@ -1,0 +1,202 @@
+html,body{
+  height: 100%;
+}
+.index{
+  background: url(../images/bj.png) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+.layui-nav{
+  background: url(../images/nav_bg.png) no-repeat center;
+  background-size: cover;
+  padding-top: 90px;
+}
+.layui-nav-tree .layui-nav-item a{
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+}
+.layui-nav-tree .layui-nav-item a:hover,.layui-nav-tree .layui-nav-item a.active{
+  background-color: #45567E;
+}
+.layui-nav-tree .layui-nav-item a:hover::before,.layui-nav-tree .layui-nav-item a.active::before{
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 40px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+nav{
+  position: relative;
+  width: 200px;
+}
+.index_nav{
+  display: none;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+  position: absolute;
+  z-index: 1000;
+}
+.logo img{
+  width: 50px;
+  margin-right: 10px;
+}
+.logo p{
+  color: #fff;
+}
+.close_nav{
+  position: absolute;
+  top: 0;
+  right: -40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #0E2639;
+  color: #fff;
+  font-size: 26px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+.show_nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #0E2639;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+.content{
+  margin-left: 200px;
+}
+.content .header{
+  border-bottom:1px solid #f5f5f5;
+  zoom: 1;
+}
+.content .header::after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0;
+}
+.content .header .second-tab{
+  float: left;
+  zoom: 1;
+}
+.content .header .second-tab::after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0
+}
+.content .header .second-tab li{
+  float: left;
+  border-right: 1px solid #f5f5f5;
+  display: inline-block;
+  padding: 32px 29px;
+}
+.content .header .second-tab li a{
+  font-size: 20px;
+  color: #555555;
+}
+.content .header .second-tab li.active{
+  position: relative;
+}
+.content .header .second-tab li.active a{
+  color: #2E6DFC;
+}
+.content .header .second-tab li.active::after{
+  position: absolute;
+  content:'';
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 90px;
+  background-color: #fff;
+}
+.content .header .user{
+  float: right;
+}
+.content .header .user .ring{
+  display: inline-block;
+  position: relative;
+  background: url(../images/ico_ring.png) no-repeat 100%;
+  width: 36px;
+  height: 36px;
+  margin-right: 55px;
+  top: 23px;
+}
+.content .header .user .ring::after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  width: 10px;
+  display: block;
+  height: 10px;
+  border-radius: 10px;
+}
+.content .header .user .user-pic{
+  position: relative;
+  top:23px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+.content .header .user .user-info{
+  position: relative;
+  top:14px;
+  margin-right: 100px;
+  display: inline-block;
+}
+.content .header .user .user-info p{
+  margin: 0;
+  font-size: 12px;
+  color: #777777;
+}
+.content .layui-tab{
+  margin: 0;
+}
+.content .layui-tab .layui-tab-title{
+  border: 0;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.08);
+  padding-left: 80PX;
+  height:65px;
+}
+.content .layui-tab .layui-tab-title .layui-this{
+  color: #2E6DFC;
+}
+.content .layui-tab .layui-tab-title .layui-this:after{
+  width: 34px;
+  height: 65px;
+  left: 35%;
+  border-bottom: 5px solid #2E6DFC;
+}
+.content .layui-tab .layui-tab-title li{
+  font-size: 18px;
+  color: #777777;
+  padding:13px 15px;
+}
+.content .layui-tab .layui-tab-content{
+  padding: 32px 60px;
+}
