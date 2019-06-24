@@ -34,8 +34,8 @@
   <div class="content">
     <div class="header">
       <ul class="second-tab">
-        <li class="active"><a href="javascript:;">部署与实施</a></li>
-        <li><a href="javascript:;">工作进度</a></li>
+        <li><a href="javascript:;">部署与实施</a></li>
+        <li class="active"><a href="javascript:;">工作进度</a></li>
       </ul>
       <div class="user">
         <a href="javascript:;" class="ring"></a>
@@ -48,16 +48,55 @@
     </div>
     <div class="layui-tab layui-tab-brief">
       <ul class="layui-tab-title">
-        <li>填图面积</li>
-        <li class="layui-this">化探工程</li>
+        <li class="layui-this">填图面积</li>
+        <li>化探工程</li>
         <li>物探工程</li>
         <li>钻孔工程</li>
+        <li>坑探工程</li>
+        <li>槽探工程</li>
+        <li>浅井工程</li>
       </ul>
       <div class="layui-tab-content">
-        <div class="layui-tab-item ">
-          1
-        </div>
         <div class="layui-tab-item layui-show">
+          <div class="search-box">
+            日期: 
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_1_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_1_2"></div>
+            </div>
+          </div>
+          <table class="we-table">
+            <thead>
+              <tr>
+                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>日期</th>
+                <th>项目名称</th>
+                <th>化探工程(二级)</th>
+                <th>化探完成率(三级)</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>2019-05-20</td>
+                <td>1102</td>
+                <td>19</td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="layui-tab-item">
           <div class="search-box">
             日期: 
             <input type="text" class="layui-input time-input" id="test1">
@@ -96,8 +135,201 @@
             </tbody>
           </table>
         </div>
-        <div class="layui-tab-item">内容3</div>
-        <div class="layui-tab-item">内容4</div>
+        <div class="layui-tab-item">
+          <div class="search-box">
+            日期: 
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_3_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_3_2"></div>
+            </div>
+          </div>
+          <table class="we-table">
+            <thead>
+              <tr>
+                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>日期</th>
+                <th>项目名称</th>
+                <th>化探工程(二级)</th>
+                <th>化探完成率(三级)</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>2019-05-20</td>
+                <td>1102</td>
+                <td>19</td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="layui-tab-item">
+          <div class="search-box">
+            日期: 
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_4_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_4_2"></div>
+            </div>
+          </div>
+          <table class="we-table">
+            <thead>
+              <tr>
+                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>日期</th>
+                <th>项目名称</th>
+                <th>化探工程(二级)</th>
+                <th>化探完成率(三级)</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>2019-05-20</td>
+                <td>1102</td>
+                <td>19</td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="layui-tab-item">
+          <div class="search-box">
+            日期: 
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_5_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_5_2"></div>
+            </div>
+          </div>
+          <table class="we-table">
+            <thead>
+              <tr>
+                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>日期</th>
+                <th>项目名称</th>
+                <th>化探工程(二级)</th>
+                <th>化探完成率(三级)</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>2019-05-20</td>
+                <td>1102</td>
+                <td>19</td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="layui-tab-item">
+          <div class="search-box">
+            日期: 
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_6_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_6_2"></div>
+            </div>
+          </div>
+          <table class="we-table">
+            <thead>
+              <tr>
+                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>日期</th>
+                <th>项目名称</th>
+                <th>化探工程(二级)</th>
+                <th>化探完成率(三级)</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>2019-05-20</td>
+                <td>1102</td>
+                <td>19</td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="layui-tab-item">
+          <div class="search-box">
+            日期: 
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_7_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_7_2"></div>
+            </div>
+          </div>
+          <table class="we-table">
+            <thead>
+              <tr>
+                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>日期</th>
+                <th>项目名称</th>
+                <th>化探工程(二级)</th>
+                <th>化探完成率(三级)</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>2019-05-20</td>
+                <td>1102</td>
+                <td>19</td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
