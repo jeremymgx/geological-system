@@ -200,3 +200,78 @@ nav{
 .content .layui-tab .layui-tab-content{
   padding: 32px 60px;
 }
+.content .layui-tab .layui-tab-content .layui-tab-item .echarts-box {
+  margin-bottom: 20px;
+}
+.content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox{
+  width: 49.5%;
+  display: inline-block;
+}
+.content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox:first-child .echarts{
+  height: 480px;
+  margin-right:10px;
+  background: #000;
+}
+.content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox:last-child .echarts{
+  height: 480px;
+  margin-left:10px;
+  background: #000;
+
+}
+
+
+/* 表格样式 */
+.we-table{
+  width: 100%;
+}
+.we-table thead tr th{
+  padding: 22px 40px;
+  background: #F5F8FF;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+}
+.we-table thead tr th input{
+  position: absolute;
+  top: 25px;
+  left: 20%;
+}
+.we-table tbody tr{
+  border-bottom: 1px solid #D8D8D8;
+}
+.we-table tbody tr td{
+  font-size: 14px;
+  color: #555555;
+  text-align: center;
+  padding: 22px 0;
+  position: relative;
+}
+.we-table tbody tr td input{
+  position: absolute;
+  top: 25px;
+  left: 20%;
+}
+.search-box{
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #555555;
+}
+.search-box .time-input{
+  display: inline-block;
+  width:157px;
+  border: 1px solid #D8D8D8;
+  border-radius: 2px;
+  margin: 0 10px;
+  height: 32px;
+  line-height: 32px;
+}
+.search-box .search-btn{
+  background: #2E6DFC;
+  border: 0;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 6px 20px;
+}

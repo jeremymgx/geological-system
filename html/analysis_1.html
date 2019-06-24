@@ -48,18 +48,35 @@
     </div>
     <div class="layui-tab layui-tab-brief">
       <ul class="layui-tab-title">
-        <li class="layui-this">网站设置</li>
-        <li>用户管理</li>
-        <li>权限分配</li>
-        <li>商品管理</li>
-        <li>订单管理</li>
+        <li>填图面积</li>
+        <li class="layui-this">化探工程</li>
+        <li>物探工程</li>
+        <li>钻孔工程</li>
       </ul>
       <div class="layui-tab-content">
+        <div class="layui-tab-item ">
+          1
+        </div>
         <div class="layui-tab-item layui-show">
-          <table>
+          <div class="search-box">
+            日期: 
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_2_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="title-btn"></div>
+              <div class="echarts" id="echarts_2_2"></div>
+            </div>
+          </div>
+          <table class="we-table">
             <thead>
               <tr>
-                <th>序号</th>
+                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
                 <th>日期</th>
                 <th>项目名称</th>
                 <th>化探工程(二级)</th>
@@ -67,12 +84,20 @@
                 <th>备注</th>
               </tr>
             </thead>
+            <tbody>
+              <tr>
+                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>2019-05-20</td>
+                <td>1102</td>
+                <td>19</td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </tbody>
           </table>
         </div>
-        <div class="layui-tab-item">内容2</div>
         <div class="layui-tab-item">内容3</div>
         <div class="layui-tab-item">内容4</div>
-        <div class="layui-tab-item">内容5</div>
       </div>
     </div>
   </div>
@@ -83,6 +108,23 @@
 //注意：选项卡 依赖 element 模块
 layui.use('element', function(){
   var element = layui.element;
+});
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+  //执行一个laydate实例
+  laydate.render({
+    elem: '#test1' //指定元素
+  });
 });
   })
 </script>
