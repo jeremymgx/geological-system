@@ -530,7 +530,10 @@ $(function () {
                 name: '红色预警',
                 type: 'effectScatter',
                 coordinateSystem: 'geo',
-                data: mapdata1,
+                data: [
+                    { value: [118.88, 28.97, 177] },
+                    { value: [116.7, 39.53, 193] }
+                ],
                 symbolSize: 6,
                 label: {
                     normal: {
@@ -552,7 +555,10 @@ $(function () {
                 name: '橙色预警',
                 type: 'effectScatter',
                 coordinateSystem: 'geo',
-                data: mapdata2,
+                data: [
+                    { value: [100.88, 30.97, 177] },
+                    { value: [111.7, 40.53, 193] }
+                ],
                 symbolSize: 6,
                 label: {
                     normal: {
@@ -566,7 +572,7 @@ $(function () {
                 },
                 itemStyle: {
                     normal: {
-                        color: '#246bed'
+                        color: '#f18626'
                     }
                 }
             },
@@ -574,7 +580,10 @@ $(function () {
                 name: '黄色预警',
                 type: 'effectScatter',
                 coordinateSystem: 'geo',
-                data: mapdata3,
+                data: [
+                    { value: [115.88, 25.97, 177] },
+                    { value: [116.7, 36.53, 193] }
+                ],
                 symbolSize: 6,
                 label: {
                     normal: {
@@ -596,7 +605,10 @@ $(function () {
                 name: '蓝色预警',
                 type: 'effectScatter',
                 coordinateSystem: 'geo',
-                data: mapdata4,
+                data: [
+                    { value: [113.88, 28.97, 177] },
+                    { value: [116.7, 33.53, 193] }
+                ],
                 symbolSize: 6,
                 label: {
                     normal: {
@@ -610,7 +622,7 @@ $(function () {
                 },
                 itemStyle: {
                     normal: {
-                        color: '#f18626'
+                        color: '#246bed'
                     }
                 }
             }
@@ -1134,7 +1146,7 @@ $(function () {
     }
     echarts_5_5.setOption(option_5_5);
     // echarts_6
-    var color6 = ['#FF3939','#F18626','#F8E71C']
+    var color6 = ['#FF3939','#F18626','#F8E71C','#246bed']
     var style6 = color6.map(function(item){
         return {
             color:item,
@@ -1149,7 +1161,7 @@ $(function () {
             trigger: 'item'
         },
         legend: {
-            data:['红色预警','橙色预警','黄色预警'],
+            data:['红色预警','橙色预警','黄色预警','蓝色预警'],
             itemWidth: 8,
             itemHeight: 8,
             icon: 'circle',
@@ -1184,7 +1196,7 @@ $(function () {
         },
         series: [{
             name:'红色预警',
-            data: [120, , 150, , ],
+            data: [120, , , , ],
             type: 'bar',
             stack:'all',
             barWidth:3,
@@ -1203,6 +1215,13 @@ $(function () {
             type: 'bar',
             stack:'all',
             itemStyle:style6[2]
+        },
+        {
+            name:'蓝色预警',
+            data: [, , 150, , ],
+            type: 'bar',
+            stack:'all',
+            itemStyle:style6[3]
         }]
     };
     echarts_6.setOption(option_6)
@@ -1259,7 +1278,7 @@ $(function () {
             },
         },
         series: [{
-            data: echarts7Data,
+            data: [23, 43, 42, 54, 32, 12, 23, 65, 87, 45, 28, 45],
             type: 'line',
             smooth: true,
             lineStyle:{
@@ -1339,7 +1358,10 @@ $(function () {
                 name: '已评估',
                 type: 'effectScatter',
                 coordinateSystem: 'geo',
-                data: mapdata1,
+                data: [
+                    { value: [118.88, 28.97, 177] },
+                    { value: [116.7, 39.53, 193] }
+                ],
                 symbolSize: 5,
                 label: {
                     normal: {
@@ -1361,7 +1383,10 @@ $(function () {
                 name: '未评估',
                 type: 'effectScatter',
                 coordinateSystem: 'geo',
-                data: mapdata3,
+                data: [
+                    { value: [115.88, 25.97, 177] },
+                    { value: [116.7, 36.53, 193] }
+                ],
                 symbolSize: 5,
                 label: {
                     normal: {
