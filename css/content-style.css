@@ -176,12 +176,14 @@ nav{
 }
 .content .layui-tab{
   margin: 0;
+  background: #f8f8f8;
 }
 .content .layui-tab .layui-tab-title{
   border: 0;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.08);
   padding-left: 80PX;
   height:65px;
+  background: #fff;
 }
 .content .layui-tab .layui-tab-title .layui-this{
   color: #2E6DFC;
@@ -210,12 +212,12 @@ nav{
 .content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox:first-child .echarts{
   height: 480px;
   margin-right:10px;
-  background: #000;
+  /*background: #000;*/
 }
 .content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox:last-child .echarts{
   height: 480px;
   margin-left:10px;
-  background: #000;
+  /*background: #000;*/
 
 }
 
