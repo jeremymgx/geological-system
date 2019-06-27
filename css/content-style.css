@@ -213,13 +213,22 @@ nav{
 .content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox:first-child .echarts{
   height: 480px;
   margin-right:10px;
-  /*background: #000;*/
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
 }
 .content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox:last-child .echarts{
   height: 480px;
   margin-left:10px;
-  /*background: #000;*/
-
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+}
+.echarts-title{
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+.echarts-title span{
+  color: #777;
 }
 
 
