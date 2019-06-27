@@ -235,10 +235,55 @@ nav{
   color: #333333;
   position: relative;
 }
-.we-table thead tr th input{
+.we-table input[type="checkbox"] {
+  display: none;
+  -webkit-appearance: none;
+  /*去除系统默认appearance的样式,常用于IOS下移除原生样式*/
+  margin: 0;
+}
+.we-table thead tr th .check-item-all{
   position: absolute;
   top: 25px;
   left: 20%;
+  display: inline-block;
+}
+.we-table thead tr th .check-item-all .check-all-in+label {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #fff url('../images/ico_white.png') no-repeat 100%;
+  background-size: contain;
+  cursor: pointer;
+}
+.we-table thead tr th .check-item-all .check-half-in+label {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #fff url('../images/ico_jian.png') no-repeat 100%;
+  background-size: contain;
+  cursor: pointer;
+}
+.we-table thead tr th .check-item-all .check-all-in:checked+label {
+  background: #fff url('../images/ico_sure.png') no-repeat 100%;
+  background-size: contain;
+}
+.we-table tbody tr td .check-item {
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  left: 20%;
+}
+.we-table tbody tr td .check-item .check-item-in+label {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: #fff url('../images/ico_white.png') no-repeat 100%;
+  background-size: contain;
+  cursor: pointer;
+}
+.we-table tbody tr td .check-item .check-item-in:checked+label {
+  background: #fff url('../images/ico_sure.png') no-repeat 100%;
+  background-size: contain;
 }
 .we-table tbody tr{
   border-bottom: 1px solid #D8D8D8;

@@ -76,7 +76,12 @@
           <table class="we-table">
             <thead>
               <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>
+                  <div class="check-item-all ">
+                      <input type="checkbox" class="check-all-in check-all-in-1" id="all">
+                      <label for="all"></label>
+                  </div>序号
+                </th>
                 <th>日期</th>
                 <th>项目名称</th>
                 <th>化探工程(二级)</th>
@@ -86,7 +91,12 @@
             </thead>
             <tbody>
               <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>
+                  <div class="check-item">
+                    <input type="checkbox" class="check-item-in check-item-in-1" id="checkbox2">
+                    <label for="checkbox2"></label>
+                  </div>1
+                </td>
                 <td>2019-05-20</td>
                 <td>1102</td>
                 <td>19</td>
@@ -115,7 +125,12 @@
           <table class="we-table">
             <thead>
               <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>
+                  <div class="check-item-all ">
+                      <input type="checkbox" class="check-all-in check-all-in-2" id="all">
+                      <label for="all"></label>
+                  </div>序号
+                </th>
                 <th>日期</th>
                 <th>项目名称</th>
                 <th>化探工程(二级)</th>
@@ -125,7 +140,12 @@
             </thead>
             <tbody>
               <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>
+                  <div class="check-item">
+                    <input type="checkbox" class="check-item-in check-item-in-2" id="checkbox2">
+                    <label for="checkbox2"></label>
+                  </div>1
+                </td>
                 <td>2019-05-20</td>
                 <td>1102</td>
                 <td>19</td>
@@ -154,7 +174,12 @@
           <table class="we-table">
             <thead>
               <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>
+                  <div class="check-item-all ">
+                      <input type="checkbox" class="check-all-in check-all-in-3" id="all">
+                      <label for="all"></label>
+                  </div>序号
+                </th>
                 <th>日期</th>
                 <th>项目名称</th>
                 <th>化探工程(二级)</th>
@@ -164,7 +189,12 @@
             </thead>
             <tbody>
               <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>
+                  <div class="check-item">
+                    <input type="checkbox" class="check-item-in check-item-in-3" id="checkbox2">
+                    <label for="checkbox2"></label>
+                  </div>1
+                </td>
                 <td>2019-05-20</td>
                 <td>1102</td>
                 <td>19</td>
@@ -193,7 +223,12 @@
           <table class="we-table">
             <thead>
               <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>
+                  <div class="check-item-all ">
+                      <input type="checkbox" class="check-all-in check-all-in-4" id="all">
+                      <label for="all"></label>
+                  </div>序号
+                </th>
                 <th>日期</th>
                 <th>项目名称</th>
                 <th>化探工程(二级)</th>
@@ -203,7 +238,12 @@
             </thead>
             <tbody>
               <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>
+                  <div class="check-item">
+                    <input type="checkbox" class="check-item-in check-item-in-4" id="checkbox2">
+                    <label for="checkbox2"></label>
+                  </div>1
+                </td>
                 <td>2019-05-20</td>
                 <td>1102</td>
                 <td>19</td>
@@ -220,28 +260,142 @@
 <script src="../js/bar.js"></script>
 <script>
   $(function () {
-//注意：选项卡 依赖 element 模块
-layui.use('element', function(){
-  var element = layui.element;
-});
-layui.use('form', function(){
-  var form = layui.form;
-  
-  //监听提交
-  form.on('submit(formDemo)', function(data){
-    layer.msg(JSON.stringify(data.field));
-    return false;
-  });
-});
-layui.use('laydate', function(){
-  var laydate = layui.laydate;
-  
-  //执行一个laydate实例
-  laydate.render({
-    elem: '#test1' //指定元素
-  });
-});
+    //注意：选项卡 依赖 element 模块
+    layui.use('element', function(){
+      var element = layui.element;
+    });
+    layui.use('form', function(){
+      var form = layui.form;
+      
+      //监听提交
+      form.on('submit(formDemo)', function(data){
+        layer.msg(JSON.stringify(data.field));
+        return false;
+      });
+    });
+    layui.use('laydate', function(){
+      var laydate = layui.laydate;
+      
+      //执行一个laydate实例
+      laydate.render({
+        elem: '#test1' //指定元素
+      });
+    });
+
+    //table checkbox 
+    $(function(){
+      $('.check-all-in-1').on('click',function(){
+          $(this).removeClass('check-half-in');
+          var mark=$(this).prop("checked");
+          if(mark==true){
+              $(".check-item .check-item-in-1").prop("checked",true);
+          }else{
+              $(".check-item .check-item-in-1").prop("checked",false);
+          }
+      });
+      $(".check-item .check-item-in-1").on('click',function(){
+          var checkArr = [];
+          $(".check-item .check-item-in-1").each(function(){
+              checkArr.push($(this).prop("checked"));
+          })
+          var y = checkArr.length;
+          var x = checkArr.filter(n=>n===true).length;
+          if(x === 0){
+              $('.check-all-in-1').prop("checked",false);
+              $('.check-all-in-1').removeClass('check-half-in');
+          }else if(x === y){
+              $('.check-all-in-1').prop("checked",true);
+              $('.check-all-in-1').removeClass('check-half-in');
+          }else if(x>0 && x<y){
+              $('.check-all-in-1').addClass('check-half-in');
+              $('.check-all-in-1').prop("checked",false);
+          }
+      })
+
+      $('.check-all-in-2').on('click',function(){
+          $(this).removeClass('check-half-in');
+          var mark=$(this).prop("checked");
+          if(mark==true){
+              $(".check-item .check-item-in-2").prop("checked",true);
+          }else{
+              $(".check-item .check-item-in-2").prop("checked",false);
+          }
+      });
+      $(".check-item .check-item-in-2").on('click',function(){
+          var checkArr = [];
+          $(".check-item .check-item-in-2").each(function(){
+              checkArr.push($(this).prop("checked"));
+          })
+          var y = checkArr.length;
+          var x = checkArr.filter(n=>n===true).length;
+          if(x === 0){
+              $('.check-all-in-2').prop("checked",false);
+              $('.check-all-in-2').removeClass('check-half-in');
+          }else if(x === y){
+              $('.check-all-in-2').prop("checked",true);
+              $('.check-all-in-2').removeClass('check-half-in');
+          }else if(x>0 && x<y){
+              $('.check-all-in-2').addClass('check-half-in');
+              $('.check-all-in-2').prop("checked",false);
+          }
+      })
+
+      $('.check-all-in-3').on('click',function(){
+          $(this).removeClass('check-half-in');
+          var mark=$(this).prop("checked");
+          if(mark==true){
+              $(".check-item .check-item-in-3").prop("checked",true);
+          }else{
+              $(".check-item .check-item-in-3").prop("checked",false);
+          }
+      });
+      $(".check-item .check-item-in-3").on('click',function(){
+          var checkArr = [];
+          $(".check-item .check-item-in-3").each(function(){
+              checkArr.push($(this).prop("checked"));
+          })
+          var y = checkArr.length;
+          var x = checkArr.filter(n=>n===true).length;
+          if(x === 0){
+              $('.check-all-in-3').prop("checked",false);
+              $('.check-all-in-3').removeClass('check-half-in');
+          }else if(x === y){
+              $('.check-all-in-3').prop("checked",true);
+              $('.check-all-in-3').removeClass('check-half-in');
+          }else if(x>0 && x<y){
+              $('.check-all-in-3').addClass('check-half-in');
+              $('.check-all-in-3').prop("checked",false);
+          }
+      })
+
+      $('.check-all-in-4').on('click',function(){
+          $(this).removeClass('check-half-in');
+          var mark=$(this).prop("checked");
+          if(mark==true){
+              $(".check-item .check-item-in-4").prop("checked",true);
+          }else{
+              $(".check-item .check-item-in-4").prop("checked",false);
+          }
+      });
+      $(".check-item .check-item-in-4").on('click',function(){
+          var checkArr = [];
+          $(".check-item .check-item-in-4").each(function(){
+              checkArr.push($(this).prop("checked"));
+          })
+          var y = checkArr.length;
+          var x = checkArr.filter(n=>n===true).length;
+          if(x === 0){
+              $('.check-all-in-4').prop("checked",false);
+              $('.check-all-in-4').removeClass('check-half-in');
+          }else if(x === y){
+              $('.check-all-in-4').prop("checked",true);
+              $('.check-all-in-4').removeClass('check-half-in');
+          }else if(x>0 && x<y){
+              $('.check-all-in-4').addClass('check-half-in');
+              $('.check-all-in-4').prop("checked",false);
+          }
+      })
+    });
   })
 </script>
-
 </html>
