@@ -46,12 +46,106 @@
         </div>
       </div>
     </div>
+    <div class="layui-tab layui-tab-brief white_bg">
+      <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+          <div class="search-box">
+            项目名称:
+            <input type="text" class="layui-input inpit_width">
+            项目类型:
+            <input type="text" class="layui-input inpit_width">
+            <button class="search-btn">搜索</button>
+          </div>
+          <table class="we-table">
+            <thead>
+            <tr>
+              <th>
+                <div class="check-item-all ">
+                  <input type="checkbox" class="check-all-in check-all-in-1" id="all">
+                  <label for="all"></label>
+                </div>序号
+              </th>
+              <th>项目名称</th>
+              <th>项目类型</th>
+              <th>当前进度</th>
+              <th>承建单位代码</th>
+              <th>负责人</th>
+              <th>联系方式</th>
+              <th>成员数量</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <div class="check-item">
+                  <input type="checkbox" class="check-item-in check-item-in-1" id="checkbox2">
+                  <label for="checkbox2"></label>
+                </div>
+                <span>1</span>
+              </td>
+              <td>1142</td>
+              <td>2</td>
+              <td>80</td>
+              <td>80</td>
+              <td>李伟</td>
+              <td>10086</td>
+              <td>100</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
+
 <script>
   $(function () {
+    layui.use('form', function(){
+      var form = layui.form;
 
+      //监听提交
+      form.on('submit(formDemo)', function(data){
+        layer.msg(JSON.stringify(data.field));
+        return false;
+      });
+    });
+    layui.use('laydate', function(){
+      var laydate = layui.laydate;
+
+    });
+
+    //table checkbox
+    $(function(){
+      $('.check-all-in').on('click',function(){
+        $(this).removeClass('check-half-in');
+        var mark=$(this).prop("checked");
+        if(mark==true){
+          $(".check-item .check-item-in").prop("checked",true);
+        }else{
+          $(".check-item .check-item-in").prop("checked",false);
+        }
+      });
+      $(".check-item .check-item-in").on('click',function(){
+        var checkArr = [];
+        $(".check-item .check-item-in").each(function(){
+          checkArr.push($(this).prop("checked"));
+        })
+        var y = checkArr.length;
+        var x = checkArr.filter(n=>n===true).length;
+        if(x === 0){
+          $('.check-all-in').prop("checked",false);
+          $('.check-all-in').removeClass('check-half-in');
+        }else if(x === y){
+          $('.check-all-in').prop("checked",true);
+          $('.check-all-in').removeClass('check-half-in');
+        }else if(x>0 && x<y){
+          $('.check-all-in').addClass('check-half-in');
+          $('.check-all-in').prop("checked",false);
+        }
+      })
+    });
   })
 </script>
 

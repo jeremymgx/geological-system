@@ -45,13 +45,307 @@
         </div>
       </div>
     </div>
+    <div class="layui-tab layui-tab-brief white_bg">
+      <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+          <div class="search-box">
+            日期:
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+          </div>
+          <div class="echarts-box">
+            <div class="echarts-sbox">
+              <div class="echarts-title">风险度</div>
+              <div class="echarts" id="echarts_1_1"></div>
+            </div>
+            <div class="echarts-sbox">
+              <div class="echarts-title">风险度</div>
+              <div class="echarts" id="echarts_1_2"></div>
+            </div>
+          </div>
+          <p style="margin-bottom: 20px">地质点记录</p>
+          <table class="we-table">
+            <thead>
+            <tr>
+              <th>
+                <div class="check-item-all ">
+                  <input type="checkbox" class="check-all-in check-all-in-1" id="all">
+                  <label for="all"></label>
+                </div>序号
+              </th>
+              <th>日期</th>
+              <th>项目名称</th>
+              <th>综合风险度</th>
+              <th>部署与实施（一级）</th>
+              <th>工作进度（一级）</th>
+              <th>原始资料（一级）</th>
+              <th>质量控制（一级）</th>
+              <th>人员与时间投入（一级）</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <div class="check-item">
+                  <input type="checkbox" class="check-item-in check-item-in-1" id="checkbox2">
+                  <label for="checkbox2"></label>
+                </div>
+                <span>1</span>
+              </td>
+              <td>2019-5-23</td>
+              <td>1233</td>
+              <td>23</td>
+              <td>123</td>
+              <td>123</td>
+              <td>123</td>
+              <td>123</td>
+              <td>123</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
-
 <script>
-  $(function () {
+  var echarts_1_1 = echarts.init(document.getElementById('echarts_1_1'));
+  var option1_1 = {
+    tooltip: {
+      trigger: 'item',
+    },
+    toolbox: {
+      show: true,
+      top: 30,
+      right: 20,
+      feature: {
+        dataView: {readOnly: false},
+        magicType: {type: ['line', 'bar']},
+        restore: {},
+        saveAsImage: {}
+      }
+    },
+    legend: {
+      data: ['部署与实施','工作进度','原始材料','质量控制','人员与时间投入'],
+      itemWidth:13,
+      itemHeight:13,
+      textStyle:{
+        color:'#777'
+      },
+      top: 10,
+      left: 15,
+    },
+    xAxis: {
+      type: 'category',
+      data: ['1101', '1142', '932', '1186', '996', 'dqf', '1115','681'],
+      axisTick:{
+        show:false
+      },
+      axisLine:{
+        lineStyle:{
+          color:'#d8d8d8'
+        }
+      },
+      axisLabel: {
+        textStyle: {
+          color: '#333',
+          fontSize: 12,
+        },
+      }
+    },
+    yAxis: {
+      type: 'value',
+      splitLine:{
+        show:false
+      },
+      axisLine:{
+        show:false
+      },
+      axisTick:{
+        show:false
+      },
+      axisLabel: {
+        textStyle: {
+          color: '#777',
+          fontSize: 12,
+        },
+      }
+    },
+    series: [
+      {
+        name:'部署与实施',
+        color:'#32B787',
+        data: [35, 23, 23, 2, 70, 34, 67,20],
+        type: 'bar',
+        barWidth:6,
+        itemStyle: {
+          barBorderRadius:8
+        },
+      },
+      {
+        name:'工作进度',
+        color:'#F74B8F',
+        data: [87, 23, 55, 2, 0, 34, 4,20],
+        type: 'bar',
+        barWidth:6,
+        itemStyle: {
+          barBorderRadius:8
+        },
+      },
+      {
+        name:'原始材料',
+        color:'#9280FC',
+        data: [67, 55, 12, 2, 23, 34, 13,13],
+        type: 'bar',
+        barWidth:6,
+        itemStyle: {
+          barBorderRadius:8
+        },
+      },
+      {
+        name:'质量控制',
+        color:'#37A1EE',
+        data: [34, 23, 55, 25, 21, 34, 13,20],
+        type: 'bar',
+        barWidth:6,
+        itemStyle: {
+          barBorderRadius:8
+        },
+      },
+      {
+        name:'人员与时间投入',
+        color:'#FF3939',
+        data: [87, 64, 55, 25, 0, 34, 13,20],
+        type: 'bar',
+        barWidth:6,
+        itemStyle: {
+          barBorderRadius:8
+        },
+      }]
+  };
+  echarts_1_1.setOption(option1_1);
 
-  })
+
+  var echarts_1_2 = echarts.init(document.getElementById('echarts_1_2'));
+  var option1_2 = {
+    tooltip: {
+      trigger: 'item',
+    },
+    toolbox: {
+      show: true,
+      top: 10,
+      right: 20,
+      feature: {
+        dataView: {readOnly: false},
+        magicType: {type: ['line', 'bar']},
+        restore: {},
+        saveAsImage: {}
+      }
+    },
+    legend: {
+      data: ['综合风险度'],
+      itemWidth:13,
+      itemHeight:13,
+      textStyle:{
+        color:'#777'
+      },
+      top: 10,
+      left: 15,
+    },
+    xAxis: {
+      type: 'category',
+      data: ['1101', '1142', '932', '1186', '996', 'dqf', '1115','681'],
+      axisTick:{
+        show:false
+      },
+      axisLine:{
+        lineStyle:{
+          color:'#d8d8d8'
+        }
+      },
+      axisLabel: {
+        textStyle: {
+          color: '#333',
+          fontSize: 12,
+        },
+      }
+    },
+    yAxis: {
+      type: 'value',
+      splitLine:{
+        show:false
+      },
+      axisLine:{
+        show:false
+      },
+      axisTick:{
+        show:false
+      },
+      axisLabel: {
+        textStyle: {
+          color: '#777',
+          fontSize: 12,
+        },
+      }
+    },
+    color:['#2E6DFC '],
+    series: [{ // For shadow
+      type: 'bar',
+      barWidth:16,
+      itemStyle: {
+        normal: {
+          color: 'rgba(0,0,0,0.05)',
+          barBorderRadius:8
+        },
+      },
+      barGap:'-100%',
+      barCategoryGap:'40%',
+      data: [100, 100, 100, 100, 100, 100, 100,100],
+      animation: false,
+    },
+      {
+        name:'综合风险度',
+        data: [35, 23, 55, 80, 70, 34, 13,20],
+        type: 'bar',
+        barWidth:16,
+        itemStyle: {
+          barBorderRadius:8
+        },
+      }]
+  };
+  echarts_1_2.setOption(option1_2);
+</script>
+<script>
+  //table checkbox
+  $(function(){
+    $('.check-all-in').on('click',function(){
+      $(this).removeClass('check-half-in');
+      var mark=$(this).prop("checked");
+      if(mark==true){
+        $(".check-item .check-item-in").prop("checked",true);
+      }else{
+        $(".check-item .check-item-in").prop("checked",false);
+      }
+    });
+    $(".check-item .check-item-in").on('click',function(){
+      var checkArr = [];
+      $(".check-item .check-item-in").each(function(){
+        checkArr.push($(this).prop("checked"));
+      })
+      var y = checkArr.length;
+      var x = checkArr.filter(n=>n===true).length;
+      if(x === 0){
+        $('.check-all-in').prop("checked",false);
+        $('.check-all-in').removeClass('check-half-in');
+      }else if(x === y){
+        $('.check-all-in').prop("checked",true);
+        $('.check-all-in').removeClass('check-half-in');
+      }else if(x>0 && x<y){
+        $('.check-all-in').addClass('check-half-in');
+        $('.check-all-in').prop("checked",false);
+      }
+    })
+  });
 </script>
 
 </html>
