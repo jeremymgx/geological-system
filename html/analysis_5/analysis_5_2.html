@@ -23,22 +23,22 @@
     </div>
     <ul class="layui-nav layui-nav-tree layui-nav-side">
       <li class="layui-nav-item"><a href="../index.html">首页</a></li>
-      <li class="layui-nav-item"><a href="message.html">信息查询</a></li>
-      <li class="layui-nav-item"><a href="setting.html">指标与权重设置</a></li>
-      <li class="layui-nav-item"><a class="active" href="analysis.html">单项指标分析</a></li>
-      <li class="layui-nav-item"><a href="datalist.html">数据列表</a></li>
-      <li class="layui-nav-item"><a href="evaluation.html">综合分析评估</a></li>
-      <li class="layui-nav-item"><a href="system.html">系统管理</a></li>
+      <li class="layui-nav-item"><a href="../message.html">信息查询</a></li>
+      <li class="layui-nav-item"><a href="../setting.html">指标与权重设置</a></li>
+      <li class="layui-nav-item"><a class="active" href="../analysis_1/analysis_1_1.html">单项指标分析</a></li>
+      <li class="layui-nav-item"><a href="../datalist.html">数据列表</a></li>
+      <li class="layui-nav-item"><a href="../evaluation.html">综合分析评估</a></li>
+      <li class="layui-nav-item"><a href="../system.html">系统管理</a></li>
     </ul>
   </nav>
   <div class="content">
     <div class="header">
       <ul class="second-tab">
-        <li><a href="./analysis.html">部署与实施</a></li>
-        <li><a href="./analysis_2.html">工作进度</a></li>
-        <li><a href="./analysis_3.html">原始资料</a></li>
-        <li><a href="./analysis_4.html">质量控制</a></li>
-        <li class="active"><a href="./analysis_5.html">人员时间投入</a></li>
+        <li><a href="../analysis_1/analysis_1_1.html">部署与实施</a></li>
+        <li><a href="../analysis_2/analysis_2_1.html">工作进度</a></li>
+        <li><a href="../analysis_3/analysis_3_1.html">原始资料</a></li>
+        <li><a href="../analysis_4/analysis_4_1.html">质量控制</a></li>
+        <li class="active"><a href="./analysis_5_1.html">人员时间投入</a></li>
       </ul>
       <div class="user">
         <a href="javascript:;" class="ring"></a>
@@ -51,10 +51,10 @@
     </div>
     <div class="layui-tab layui-tab-brief">
       <ul class="layui-tab-title">
-        <li class="layui-this">人员组成</li>
-        <li>业务能力</li>
-        <li>诚信度</li>
-        <li>时间投入</li>
+        <li><a href="./analysis_5_1.html">人员组成</a></li>
+        <li class="layui-this"><a href="./analysis_5_2.html">业务能力</a></li>
+        <li><a href="./analysis_5_3.html">诚信度</a></li>
+        <li><a href="./analysis_5_4.html">时间投入</a></li>
       </ul>
       <div class="layui-tab-content">
         <div class="layui-tab-item layui-show">
@@ -65,18 +65,23 @@
           </div>
           <div class="echarts-box">
             <div class="echarts-sbox">
-              <div class="title-btn"></div>
+              <div class="echarts-title">风险度 <span>（化探完成率）</span></div>
               <div class="echarts" id="echarts_1_1"></div>
             </div>
             <div class="echarts-sbox">
-              <div class="title-btn"></div>
+              <div class="echarts-title">风险度 <span>（化探工程）</span></div>
               <div class="echarts" id="echarts_1_2"></div>
             </div>
           </div>
           <table class="we-table">
             <thead>
               <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
+                <th>
+                  <div class="check-item-all ">
+                      <input type="checkbox" class="check-all-in" id="all">
+                      <label for="all"></label>
+                  </div>序号
+                </th>
                 <th>日期</th>
                 <th>项目名称</th>
                 <th>化探工程(二级)</th>
@@ -86,124 +91,12 @@
             </thead>
             <tbody>
               <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
-                <td>2019-05-20</td>
-                <td>1102</td>
-                <td>19</td>
-                <td>12</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="layui-tab-item">
-          <div class="search-box">
-            日期: 
-            <input type="text" class="layui-input time-input" id="test1">
-            <button class="search-btn">搜索</button>
-          </div>
-          <div class="echarts-box">
-            <div class="echarts-sbox">
-              <div class="title-btn"></div>
-              <div class="echarts" id="echarts_2_1"></div>
-            </div>
-            <div class="echarts-sbox">
-              <div class="title-btn"></div>
-              <div class="echarts" id="echarts_2_2"></div>
-            </div>
-          </div>
-          <table class="we-table">
-            <thead>
-              <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
-                <th>日期</th>
-                <th>项目名称</th>
-                <th>化探工程(二级)</th>
-                <th>化探完成率(三级)</th>
-                <th>备注</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
-                <td>2019-05-20</td>
-                <td>1102</td>
-                <td>19</td>
-                <td>12</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="layui-tab-item">
-          <div class="search-box">
-            日期: 
-            <input type="text" class="layui-input time-input" id="test1">
-            <button class="search-btn">搜索</button>
-          </div>
-          <div class="echarts-box">
-            <div class="echarts-sbox">
-              <div class="title-btn"></div>
-              <div class="echarts" id="echarts_3_1"></div>
-            </div>
-            <div class="echarts-sbox">
-              <div class="title-btn"></div>
-              <div class="echarts" id="echarts_3_2"></div>
-            </div>
-          </div>
-          <table class="we-table">
-            <thead>
-              <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
-                <th>日期</th>
-                <th>项目名称</th>
-                <th>化探工程(二级)</th>
-                <th>化探完成率(三级)</th>
-                <th>备注</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
-                <td>2019-05-20</td>
-                <td>1102</td>
-                <td>19</td>
-                <td>12</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="layui-tab-item">
-          <div class="search-box">
-            日期: 
-            <input type="text" class="layui-input time-input" id="test1">
-            <button class="search-btn">搜索</button>
-          </div>
-          <div class="echarts-box">
-            <div class="echarts-sbox">
-              <div class="title-btn"></div>
-              <div class="echarts" id="echarts_4_1"></div>
-            </div>
-            <div class="echarts-sbox">
-              <div class="title-btn"></div>
-              <div class="echarts" id="echarts_4_2"></div>
-            </div>
-          </div>
-          <table class="we-table">
-            <thead>
-              <tr>
-                <th><input lay-skin="primary" type="checkbox" class="check-all">序号</th>
-                <th>日期</th>
-                <th>项目名称</th>
-                <th>化探工程(二级)</th>
-                <th>化探完成率(三级)</th>
-                <th>备注</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input lay-skin="primary" type="checkbox">1</td>
+                <td>
+                  <div class="check-item">
+                    <input type="checkbox" class="check-item-in" id="checkbox2">
+                    <label for="checkbox2"></label>
+                  </div>1
+                </td>
                 <td>2019-05-20</td>
                 <td>1102</td>
                 <td>19</td>
@@ -219,28 +112,239 @@
 </body>
 
 <script>
+  var echarts_1_1 = echarts.init(document.getElementById('echarts_1_1'));
+  var option1_1 = {
+      tooltip: {
+          trigger: 'item',
+      },
+      toolbox: {
+          show: true,
+          top: 10,
+          right: 20,
+          feature: {
+              dataView: {readOnly: false},
+              magicType: {type: ['line', 'bar']},
+              restore: {},
+              saveAsImage: {}
+          }
+      },
+      legend: {
+          data: ['化探完成率'],
+          itemWidth:13,
+          itemHeight:13,
+          textStyle:{
+              color:'#777'
+          },
+          top: 10,
+          left: 15,
+      },
+      xAxis: {
+          type: 'category',
+          data: ['1101', '1142', '932', '1186',],
+          axisTick:{
+              show:false
+          },
+          axisLine:{
+              lineStyle:{
+                  color:'#d8d8d8'
+              }
+          },
+          axisLabel: {
+              textStyle: {
+                  color: '#333',
+                  fontSize: 12,
+              },
+          }
+      },
+      yAxis: {
+          type: 'value',
+          splitLine:{
+              show:false
+          },
+          axisLine:{
+              show:false
+          },
+          axisTick:{
+              show:false
+          },
+          axisLabel: {
+              textStyle: {
+                  color: '#777',
+                  fontSize: 12,
+              },
+          }
+      },
+      color:['#32B787 '],
+      series: [{ // For shadow
+          type: 'bar',
+          barWidth:16,
+          itemStyle: {
+              normal: {
+                  color: 'rgba(0,0,0,0.05)',
+                  barBorderRadius:8
+              },
+          },
+          barGap:'-100%',
+          barCategoryGap:'40%',
+          data: [100, 100, 100, 100,],
+          animation: false,
+      },
+          {
+          name:'化探完成率',
+          data: [35, 23, 55, 80,],
+          type: 'bar',
+          barWidth:16,
+          itemStyle: {
+              barBorderRadius:8
+          },
+          }]
+  };
+  echarts_1_1.setOption(option1_1);
+  
+  
+  var echarts_1_2 = echarts.init(document.getElementById('echarts_1_2'));
+  var option1_2 = {
+      tooltip: {
+          trigger: 'item',
+      },
+      toolbox: {
+          show: true,
+          top: 10,
+          right: 20,
+          feature: {
+              dataView: {readOnly: false},
+              magicType: {type: ['line', 'bar']},
+              restore: {},
+              saveAsImage: {}
+          }
+      },
+      legend: {
+          data: ['化探工程'],
+          itemWidth:13,
+          itemHeight:13,
+          textStyle:{
+              color:'#777'
+          },
+          top: 10,
+          left: 15,
+      },
+      xAxis: {
+          type: 'category',
+          data: ['1101', '1142', '932', '1186',],
+          axisTick:{
+              show:false
+          },
+          axisLine:{
+              lineStyle:{
+                  color:'#d8d8d8'
+              }
+          },
+          axisLabel: {
+              textStyle: {
+                  color: '#333',
+                  fontSize: 12,
+              },
+          }
+      },
+      yAxis: {
+          type: 'value',
+          splitLine:{
+              show:false
+          },
+          axisLine:{
+              show:false
+          },
+          axisTick:{
+              show:false
+          },
+          axisLabel: {
+              textStyle: {
+                  color: '#777',
+                  fontSize: 12,
+              },
+          }
+      },
+      color:['#2E6DFC '],
+      series: [{ // For shadow
+          type: 'bar',
+          barWidth:16,
+          itemStyle: {
+              normal: {
+                  color: 'rgba(0,0,0,0.05)',
+                  barBorderRadius:8
+              },
+          },
+          barGap:'-100%',
+          barCategoryGap:'40%',
+          data: [100, 100, 100, 100,],
+          animation: false,
+      },
+          {
+              name:'化探工程',
+              data: [35, 23, 55, 80,],
+              type: 'bar',
+              barWidth:16,
+              itemStyle: {
+                  barBorderRadius:8
+              },
+          }]
+  };
+  echarts_1_2.setOption(option1_2);
+</script>
+<script>
   $(function () {
-//注意：选项卡 依赖 element 模块
-layui.use('element', function(){
-  var element = layui.element;
-});
-layui.use('form', function(){
-  var form = layui.form;
-  
-  //监听提交
-  form.on('submit(formDemo)', function(data){
-    layer.msg(JSON.stringify(data.field));
-    return false;
-  });
-});
-layui.use('laydate', function(){
-  var laydate = layui.laydate;
-  
-  //执行一个laydate实例
-  laydate.render({
-    elem: '#test1' //指定元素
-  });
-});
+    //注意：选项卡 依赖 element 模块
+    layui.use('element', function(){
+      var element = layui.element;
+    });
+    layui.use('form', function(){
+      var form = layui.form;
+      
+      //监听提交
+      form.on('submit(formDemo)', function(data){
+        layer.msg(JSON.stringify(data.field));
+        return false;
+      });
+    });
+    layui.use('laydate', function(){
+      var laydate = layui.laydate;
+      
+      //执行一个laydate实例
+      laydate.render({
+        elem: '#test1' //指定元素
+      });
+    });
+
+    //table checkbox 
+    $(function(){
+      $('.check-all-in').on('click',function(){
+          $(this).removeClass('check-half-in');
+          var mark=$(this).prop("checked");
+          if(mark==true){
+              $(".check-item .check-item-in").prop("checked",true);
+          }else{
+              $(".check-item .check-item-in").prop("checked",false);
+          }
+      });
+      $(".check-item .check-item-in").on('click',function(){
+          var checkArr = [];
+          $(".check-item .check-item-in").each(function(){
+              checkArr.push($(this).prop("checked"));
+          })
+          var y = checkArr.length;
+          var x = checkArr.filter(n=>n===true).length;
+          if(x === 0){
+              $('.check-all-in').prop("checked",false);
+              $('.check-all-in').removeClass('check-half-in');
+          }else if(x === y){
+              $('.check-all-in').prop("checked",true);
+              $('.check-all-in').removeClass('check-half-in');
+          }else if(x>0 && x<y){
+              $('.check-all-in').addClass('check-half-in');
+              $('.check-all-in').prop("checked",false);
+          }
+      })
+    });
   })
 </script>
 

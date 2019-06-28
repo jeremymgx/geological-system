@@ -78,22 +78,21 @@
               <tr>
                 <th>
                   <div class="check-item-all ">
-                      <input type="checkbox" class="check-all-in check-all-in-1" id="all">
+                      <input type="checkbox" class="check-all-in" id="all">
                       <label for="all"></label>
                   </div>序号
                 </th>
                 <th>日期</th>
                 <th>项目名称</th>
-                <th>化探工程(二级)</th>
-                <th>化探完成率(三级)</th>
-                <th>备注</th>
+                <th>工作手段(二级)</th>
+                <th>工作手段一致性(三级)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
                   <div class="check-item">
-                    <input type="checkbox" class="check-item-in check-item-in-1" id="checkbox2">
+                    <input type="checkbox" class="check-item-in" id="checkbox2">
                     <label for="checkbox2"></label>
                   </div>1
                 </td>
@@ -101,7 +100,6 @@
                 <td>1102</td>
                 <td>19</td>
                 <td>12</td>
-                <td></td>
               </tr>
             </tbody>
           </table>
@@ -139,7 +137,7 @@ var option1_1 = {
     },
     xAxis: {
         type: 'category',
-        data: ['1101', '1142', '932', '1186', '996', 'dqf', '1115','681'],
+        data: ['1101', '1142', '932', '1186',],
         axisTick:{
             show:false
         },
@@ -176,7 +174,7 @@ var option1_1 = {
     color:['#32B787 '],
     series: [{ // For shadow
         type: 'bar',
-        barWidth:16,
+        barWidth:32,
         itemStyle: {
             normal: {
                 color: 'rgba(0,0,0,0.05)',
@@ -185,14 +183,14 @@ var option1_1 = {
         },
         barGap:'-100%',
         barCategoryGap:'40%',
-        data: [100, 100, 100, 100, 100, 100, 100,100],
+        data: [100, 100, 100, 100,],
         animation: false,
     },
         {
         name:'化探完成率',
-        data: [35, 23, 55, 80, 70, 34, 13,20],
+        data: [35, 23, 55, 80, ],
         type: 'bar',
-        barWidth:16,
+        barWidth:32,
         itemStyle: {
             barBorderRadius:8
         },
@@ -229,7 +227,7 @@ var option1_2 = {
     },
     xAxis: {
         type: 'category',
-        data: ['1101', '1142', '932', '1186', '996', 'dqf', '1115','681'],
+        data: ['1101', '1142', '932', '1186',],
         axisTick:{
             show:false
         },
@@ -266,7 +264,7 @@ var option1_2 = {
     color:['#2E6DFC '],
     series: [{ // For shadow
         type: 'bar',
-        barWidth:16,
+        barWidth:32,
         itemStyle: {
             normal: {
                 color: 'rgba(0,0,0,0.05)',
@@ -275,14 +273,14 @@ var option1_2 = {
         },
         barGap:'-100%',
         barCategoryGap:'40%',
-        data: [100, 100, 100, 100, 100, 100, 100,100],
+        data: [100, 100, 100, 100, ],
         animation: false,
     },
         {
             name:'化探工程',
-            data: [35, 23, 55, 80, 70, 34, 13,20],
+            data: [35, 23, 55, 80,],
             type: 'bar',
-            barWidth:16,
+            barWidth:32,
             itemStyle: {
                 barBorderRadius:8
             },

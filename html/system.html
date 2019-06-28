@@ -26,20 +26,114 @@
       <li class="layui-nav-item"><a href="../index.html">首页</a></li>
       <li class="layui-nav-item"><a href="message.html">信息查询</a></li>
       <li class="layui-nav-item"><a href="setting.html">指标与权重设置</a></li>
-      <li class="layui-nav-item"><a href="analysis.html">单项指标分析</a></li>
+      <li class="layui-nav-item"><a href="./analysis_1/analysis_1_1.html">单项指标分析</a></li>
       <li class="layui-nav-item"><a href="datalist.html">数据列表</a></li>
       <li class="layui-nav-item"><a href="evaluation.html">综合分析评估</a></li>
       <li class="layui-nav-item"><a class="active" href="system.html">系统管理</a></li>
     </ul>
   </nav>
-
+  <div class="content">
+    <div class="header">
+      <ul class="second-tab">
+        <li class="active"><a href="javascript:;">管理员列表</a></li>
+        <li><a id="changePas" href="javascript:;">修改密码</a></li>
+        <li><a id="exit" href="javascript:;">安全退出</a></li>
+      </ul>
+      <div class="user">
+        <a href="javascript:;" class="ring"></a>
+        <div class="user-pic"></div>
+        <div class="user-info">
+          <p>Admin</p>
+          <p>超级管理员</p>
+        </div>
+      </div>
+    </div>
+    <div class="layui-tab layui-tab-brief white_bg">
+      <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+          <div class="search-box">
+            用户名:
+            <input type="text" class="layui-input time-input" id="test1">
+            <button class="search-btn">搜索</button>
+            <button class="search-btn">添加</button>
+            <button class="search-btn">修改</button>
+            <button class="search-btn">删除</button>
+          </div>
+          <table class="we-table">
+            <thead>
+            <tr>
+              <th>
+                <div class="check-item-all ">
+                  <input type="checkbox" class="check-all-in" id="all">
+                  <label for="all"></label>
+                </div>编号
+              </th>
+              <th>用户名</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <div class="check-item">
+                  <input type="checkbox" class="check-item-in" id="checkbox2">
+                  <label for="checkbox2"></label>
+                </div>
+                <span>123132</span>
+              </td>
+              <td>123123</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="my-drawer" id="exit-drawer">
+    <div class="mask"></div>
+    <div class="drawer">
+      <div class="content">
+        <img src="../images/组件-警示.png" alt="">
+        <p>您确定要退出系统吗！</p>
+      </div>
+      <div class="footer">
+        <button>确定</button>
+        <button>取消</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script>
-  $(function () {
-
-
-  })
+  //table checkbox
+  $(function(){
+    $('.check-all-in').on('click',function(){
+      $(this).removeClass('check-half-in');
+      var mark=$(this).prop("checked");
+      if(mark==true){
+        $(".check-item .check-item-in").prop("checked",true);
+      }else{
+        $(".check-item .check-item-in").prop("checked",false);
+      }
+    });
+    $(".check-item .check-item-in").on('click',function(){
+      var checkArr = [];
+      $(".check-item .check-item-in").each(function(){
+        checkArr.push($(this).prop("checked"));
+      })
+      var y = checkArr.length;
+      var x = checkArr.filter(n=>n===true).length;
+      if(x === 0){
+        $('.check-all-in').prop("checked",false);
+        $('.check-all-in').removeClass('check-half-in');
+      }else if(x === y){
+        $('.check-all-in').prop("checked",true);
+        $('.check-all-in').removeClass('check-half-in');
+      }else if(x>0 && x<y){
+        $('.check-all-in').addClass('check-half-in');
+        $('.check-all-in').prop("checked",false);
+      }
+    })
+  });
 </script>
 
 </html>
