@@ -349,3 +349,148 @@ nav{
 .layui-tab.white_bg{
   background: #fff;
 }
+.my-drawer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.my-drawer .mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.5);
+}
+#exit-drawer{
+  display: none;
+}
+#exit-drawer .drawer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+  z-index: 9;
+}
+#exit-drawer .drawer .drawer-content{
+  margin: 0;
+  padding: 50px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+#exit-drawer .drawer .drawer-content img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+#exit-drawer .drawer .drawer-content p{
+  font-size: 16px;
+  color: #222222;
+}
+#exit-drawer .drawer .drawer-footer{
+  text-align: right;
+  padding: 15px 20px;
+}
+#exit-drawer .drawer .drawer-footer .sure-btn{
+  background: #4476D5;
+  border: 1px solid #4476D5;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 68px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#exit-drawer .drawer .drawer-footer .cancel-btn{
+  background: #fff;
+  border: 1px solid #4476D5;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #4476D5;
+  text-align: center;
+  width: 68px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+#change-drawer{
+  display: none;
+}
+#change-drawer .drawer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  width: 650px;
+  text-align: center;
+  z-index: 9;
+}
+#change-drawer .drawer .drawer-header{
+  padding: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: left;
+}
+#change-drawer .drawer .drawer-content{
+  padding: 20px 20px;
+  text-align:left;
+  border-bottom: 1px solid #e6e6e6;
+}
+#change-drawer .drawer .drawer-content > div{
+  padding: 10px 0;
+}
+#change-drawer .drawer .drawer-content > div > span{
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+#change-drawer .drawer .drawer-content > div > input{
+  border: 1px solid #D8D8D8;
+  border-radius: 2px;
+  padding: 6px 13px;
+  width: 424px;
+}
+
+#change-drawer .drawer .drawer-footer{
+  text-align: right;
+  padding: 15px 20px;
+}
+#change-drawer .drawer .drawer-footer .sure-btn{
+  background: #4476D5;
+  border: 1px solid #4476D5;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 68px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#change-drawer .drawer .drawer-footer .cancel-btn{
+  background: #fff;
+  border: 1px solid #4476D5;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #4476D5;
+  text-align: center;
+  width: 68px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+}

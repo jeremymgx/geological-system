@@ -318,6 +318,27 @@
 <script>
   //table checkbox
   $(function(){
+    //注意：选项卡 依赖 element 模块
+    layui.use('element', function(){
+      var element = layui.element;
+    });
+    layui.use('form', function(){
+      var form = layui.form;
+      
+      //监听提交
+      form.on('submit(formDemo)', function(data){
+        layer.msg(JSON.stringify(data.field));
+        return false;
+      });
+    });
+    layui.use('laydate', function(){
+      var laydate = layui.laydate;
+      
+      //执行一个laydate实例
+      laydate.render({
+        elem: '#test1' //指定元素
+      });
+    });
     $('.check-all-in').on('click',function(){
       $(this).removeClass('check-half-in');
       var mark=$(this).prop("checked");

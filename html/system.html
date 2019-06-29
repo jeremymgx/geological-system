@@ -91,13 +91,43 @@
   <div class="my-drawer" id="exit-drawer">
     <div class="mask"></div>
     <div class="drawer">
-      <div class="content">
+      <div class="drawer-content">
         <img src="../images/组件-警示.png" alt="">
         <p>您确定要退出系统吗！</p>
       </div>
-      <div class="footer">
-        <button>确定</button>
-        <button>取消</button>
+      <div class="drawer-footer">
+        <button class="sure-btn">确定</button>
+        <button class="cancel-btn">取消</button>
+      </div>
+    </div>
+  </div>
+  <div class="my-drawer" id="change-drawer">
+    <div class="mask"></div>
+    <div class="drawer">
+      <div class="drawer-header">
+        修改密码
+      </div>
+      <div class="drawer-content">
+        <div>
+          <span class="title">用户名：</span>
+          <input type="text" placeholder="请输入用户名">
+        </div>
+        <div>
+          <span class="title">原密码：</span>
+          <input type="password" placeholder="请输入原密码">
+        </div>
+        <div>
+          <span class="title">新密码：</span>
+          <input type="password" placeholder="请输入新密码">
+        </div>
+        <div>
+          <span class="title">确认新密码：</span>
+          <input type="password" placeholder="请再次输入新密码">
+        </div>
+      </div>
+      <div class="drawer-footer">
+        <button class="sure-btn">保存</button>
+        <button class="cancel-btn">关闭</button>
       </div>
     </div>
   </div>
@@ -106,6 +136,30 @@
 <script>
   //table checkbox
   $(function(){
+    //修改密码
+    $('#changePas').on('click',function(){
+      $('#change-drawer').css('display','block');
+    });
+    $('#change-drawer .sure-btn').on('click',function(){
+      $('#change-drawer').css('display','none');
+    });
+    $('#change-drawer .cancel-btn').on('click',function(){
+      $('#change-drawer').css('display','none');
+    });
+
+
+    //安全退出
+    $('#exit').on('click',function(){
+      $('#exit-drawer').css('display','block');
+    });
+    $('#exit-drawer .sure-btn').on('click',function(){
+      $('#exit-drawer').css('display','none');
+    });
+    $('#exit-drawer .cancel-btn').on('click',function(){
+      $('#exit-drawer').css('display','none');
+    });
+
+    //表格checkbox
     $('.check-all-in').on('click',function(){
       $(this).removeClass('check-half-in');
       var mark=$(this).prop("checked");
