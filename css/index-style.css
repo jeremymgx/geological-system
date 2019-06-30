@@ -10,11 +10,48 @@ html,body{
     background: url(../images/nav_bg.png) no-repeat center;
     background-size: cover;
     padding-top: 90px;
+    overflow: hidden;
 }
 .layui-nav-tree .layui-nav-item a{
     position: relative;
     height: 50px;
     line-height: 50px;
+    padding-left: 55px;
+    background-position: 25px center;
+    background-size: 9%;
+    background-repeat: no-repeat;
+}
+.layui-nav li:first-child a{
+    background-image: url("../images/ico_index.png");
+}
+.layui-nav li:nth-child(2) a{
+    background-image: url("../images/ico_message.png");
+}
+.layui-nav li:nth-child(3) a{
+    background-image: url("../images/ico_setting.png");
+}
+.layui-nav li:nth-child(4) a{
+    background-image: url("../images/ico_any.png");
+}
+.layui-nav li:nth-child(5) a{
+    background-image: url("../images/ico_v.png");
+}
+.layui-nav li:nth-child(6) a{
+    background-image: url("../images/ico_systom.png");
+}
+.layui-nav li:nth-child(6){
+    margin-top: 35px;
+    position: relative;
+    padding-top: 30px;
+}
+.layui-nav li:nth-child(6)::before{
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 10%;
 }
 .layui-nav-tree .layui-nav-item a:hover,.layui-nav-tree .layui-nav-item a.active{
     background-color: #45567E;
@@ -40,7 +77,7 @@ nav{
     display: flex;
     align-items: center;
     margin: 20px 20px;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
 }
 .logo img{

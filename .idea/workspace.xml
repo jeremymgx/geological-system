@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc301567-1688-4d26-927c-3ba227224760" name="Default" comment="柱状图">
+    <list default="true" id="cc301567-1688-4d26-927c-3ba227224760" name="Default" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/content-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/content-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/datalist.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/datalist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_1/analysis_1_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_1/analysis_1_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_1/analysis_1_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_1/analysis_1_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_1/analysis_1_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_1/analysis_1_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_1/analysis_1_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_1/analysis_1_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_2/analysis_2_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_2/analysis_2_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_2/analysis_2_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_2/analysis_2_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_2/analysis_2_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_2/analysis_2_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_2/analysis_2_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_2/analysis_2_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_2/analysis_2_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_2/analysis_2_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_2/analysis_2_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_2/analysis_2_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_2/analysis_2_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_2/analysis_2_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_3/analysis_3_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_3/analysis_3_9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_4/analysis_4_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_4/analysis_4_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_4/analysis_4_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_4/analysis_4_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_5/analysis_5_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_5/analysis_5_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_5/analysis_5_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_5/analysis_5_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_5/analysis_5_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_5/analysis_5_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/analysis_5/analysis_5_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/analysis_5/analysis_5_4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/evaluation.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/evaluation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/message_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/message_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/setting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/setting_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/setting_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/setting_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/setting_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/setting_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/setting_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/setting_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/setting_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/信息查询.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/单项指标分析.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/指标与权重设置.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/系统设置.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/综合分析评估.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,33 +49,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/evaluation.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_6.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="219" column="18" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#1993#2252#0" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/index.js">
+        <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_7.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="1148" column="26" selection-start-line="1148" selection-start-column="20" selection-end-line="1148" selection-end-column="26" />
-              <folding>
-                <element signature="e#13357#13651#0" />
-                <element signature="e#13668#15333#0" />
-                <element signature="e#15350#15709#0" />
-                <element signature="e#15729#15799#0" />
-                <element signature="e#33394#36364#0" />
-              </folding>
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_8.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="27" column="105" selection-start-line="27" selection-start-column="105" selection-end-line="27" selection-end-column="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_9.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_4/analysis_4_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_4/analysis_4_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -60,9 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav</find>
-      <find>formatter</find>
-      <find>2</find>
       <find>echarts_2</find>
       <find>splitNumber</find>
       <find>nameGap</find>
@@ -86,7 +166,17 @@
       <find>&lt;p&gt;</find>
       <find>.content .layui-tab .layui-tab-content .layui-tab-item .echarts-box .echarts-sbox</find>
       <find>echarts_3</find>
+      <find>.logo</find>
+      <find>button</find>
+      <find>.search-box .search-btn</find>
+      <find>html</find>
+      <find>.layui-nav</find>
+      <find>layui-nav-tree</find>
+      <find>&lt;li class=&quot;layui-nav-item&quot;&gt;&lt;a href=&quot;../datalist.html&quot;&gt;数据列表&lt;/a&gt;&lt;/li&gt;</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -109,8 +199,35 @@
         <option value="$PROJECT_DIR$/html/setting_3.html" />
         <option value="$PROJECT_DIR$/html/setting_4.html" />
         <option value="$PROJECT_DIR$/html/setting_5.html" />
-        <option value="$PROJECT_DIR$/css/content-style.css" />
         <option value="$PROJECT_DIR$/html/evaluation.html" />
+        <option value="$PROJECT_DIR$/css/content-style.css" />
+        <option value="$PROJECT_DIR$/css/index-style.css" />
+        <option value="$PROJECT_DIR$/html/analysis_1/analysis_1_1.html" />
+        <option value="$PROJECT_DIR$/html/analysis_1/analysis_1_2.html" />
+        <option value="$PROJECT_DIR$/html/analysis_1/analysis_1_3.html" />
+        <option value="$PROJECT_DIR$/html/analysis_1/analysis_1_4.html" />
+        <option value="$PROJECT_DIR$/html/analysis_2/analysis_2_1.html" />
+        <option value="$PROJECT_DIR$/html/analysis_2/analysis_2_2.html" />
+        <option value="$PROJECT_DIR$/html/analysis_2/analysis_2_3.html" />
+        <option value="$PROJECT_DIR$/html/analysis_2/analysis_2_4.html" />
+        <option value="$PROJECT_DIR$/html/analysis_2/analysis_2_5.html" />
+        <option value="$PROJECT_DIR$/html/analysis_2/analysis_2_6.html" />
+        <option value="$PROJECT_DIR$/html/analysis_2/analysis_2_7.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_1.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_2.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_3.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_4.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_5.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_6.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_7.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_8.html" />
+        <option value="$PROJECT_DIR$/html/analysis_3/analysis_3_9.html" />
+        <option value="$PROJECT_DIR$/html/analysis_4/analysis_4_1.html" />
+        <option value="$PROJECT_DIR$/html/analysis_4/analysis_4_2.html" />
+        <option value="$PROJECT_DIR$/html/analysis_5/analysis_5_1.html" />
+        <option value="$PROJECT_DIR$/html/analysis_5/analysis_5_2.html" />
+        <option value="$PROJECT_DIR$/html/analysis_5/analysis_5_3.html" />
+        <option value="$PROJECT_DIR$/html/analysis_5/analysis_5_4.html" />
       </list>
     </option>
   </component>
@@ -126,7 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,12 +269,37 @@
             <path>
               <item name="geological-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="geological-system" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geological-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geological-system" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geological-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geological-system" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis_4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geological-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geological-system" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis_5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geological-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geological-system" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +340,9 @@
       <workItem from="1561382319090" duration="3436000" />
       <workItem from="1561469044209" duration="4243000" />
       <workItem from="1561553130657" duration="1905000" />
-      <workItem from="1561725406458" duration="6353000" />
+      <workItem from="1561725406458" duration="7096000" />
+      <workItem from="1561786663855" duration="716000" />
+      <workItem from="1561875913836" duration="2246000" />
     </task>
     <task id="LOCAL-00001" summary="页面建立">
       <created>1560954623328</created>
@@ -236,17 +379,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561557282786</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1">
+      <created>1561733693423</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561733693423</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28139000" />
+    <option name="totallyTimeSpent" value="31844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20089285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -292,7 +442,8 @@
     <MESSAGE value="首页优化" />
     <MESSAGE value="首页调整" />
     <MESSAGE value="柱状图" />
-    <option name="LAST_COMMIT_MESSAGE" value="柱状图" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -331,18 +482,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/analysis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="220" selection-start-line="220" selection-end-line="244" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis.html" />
     <entry file="file://$PROJECT_DIR$/html/message_2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -356,13 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/datalist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/html/datalist.html" />
     <entry file="file://$PROJECT_DIR$/html/system.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -432,31 +566,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/content-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="210" column="15" lean-forward="true" selection-start-line="210" selection-start-column="15" selection-end-line="210" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/analysis_1/analysis_1_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="112" selection-start-line="112" selection-end-line="291" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#html#0;n#!!top" />
-            <element signature="e#4429#6228#0" />
-            <element signature="e#6354#8179#0" />
-            <element signature="n#script#1;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="24300">
           <caret line="1148" column="26" selection-start-line="1148" selection-start-column="20" selection-end-line="1148" selection-end-column="26" />
           <folding>
             <element signature="e#13357#13651#0" />
@@ -470,14 +582,213 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/evaluation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="219" column="18" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
+        <state relative-caret-position="207">
+          <caret line="318" column="15" selection-start-line="318" selection-start-column="15" selection-end-line="318" selection-end-column="15" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#1993#2252#0" />
+            <element signature="e#3957#6129#0" />
+            <element signature="e#6261#7870#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2950">
+          <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/content-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_1/analysis_1_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_1/analysis_1_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_1/analysis_1_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_1/analysis_1_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_2/analysis_2_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_2/analysis_2_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_2/analysis_2_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_2/analysis_2_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_2/analysis_2_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_2/analysis_2_6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_2/analysis_2_7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="105" selection-start-line="27" selection-start-column="105" selection-end-line="27" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_3/analysis_3_9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_4/analysis_4_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_4/analysis_4_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/analysis_5/analysis_5_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
     </entry>
